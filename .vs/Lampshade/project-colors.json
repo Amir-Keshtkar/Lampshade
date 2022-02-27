@@ -35,6 +35,11 @@
       "ProjectGuid": "7334bd9f-9370-4f0c-a229-1db33e6619ae",
       "DisplayName": "ServiceHost",
       "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 7

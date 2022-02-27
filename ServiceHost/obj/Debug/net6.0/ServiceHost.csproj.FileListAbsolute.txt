@@ -270,6 +270,7 @@ C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.d
 C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ref\ServiceHost.dll
 C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.pdb
 C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
-C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\scopedcss\Areas\Administrator\Pages\Shared\_AdminLayout.cshtml.rz.scp.css
 C:\Users\Amiri\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Application.dll
 C:\Users\Amiri\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Application.pdb
+C:\Users\Amiri\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\scopedcss\Areas\Administration\Pages\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\Users\Amiri\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
