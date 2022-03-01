@@ -585,11 +585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
       "projectName": "ShopManagement.Application",
-      "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
       "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
+      "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -606,11 +606,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
             },
-            "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
             }
           }
         }

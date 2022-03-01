@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NXomu9DodGn1HuN+brB86U62siO1ZKv68ws+eQKV6Ld+PO4kHEbr9bYnnKluP+BuzEKnE7TlOpcgNkg0TVQX2Q==",
+  "dgSpecHash": "FjPuGRXTeDrruG6PnGe3C2ClPETLgxOApTxNAMCdg0pefhO7wfxiDY3jXK8wL84uyPhY+qEbgW5Wh43lXScy0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
+  "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",

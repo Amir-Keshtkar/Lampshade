@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {}
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",

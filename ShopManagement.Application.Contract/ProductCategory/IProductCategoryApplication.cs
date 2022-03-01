@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using _0_Framework.Application;
+﻿using _0_Framework.Application;
 
 namespace ShopManagement.Application.Contract.ProductCategory {
     public interface IProductCategoryApplication {
@@ -11,5 +6,6 @@ namespace ShopManagement.Application.Contract.ProductCategory {
         OperationResult Edit(EditProductCategory command);
         List<ProductCategoryViewModel> Search(ProductCategorySearchModel command);
         EditProductCategory GetDetails(long id);
+        List<ProductCategoryViewModel> GetProductCategories ();
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e+DWNgJGq3CH60l0Q/Hn0YcKqk6hXS3tpiyEy08e/QEe1IoEhc6pewcpJFTHYNXvzGzSn7BuWRM75rZ70d4KwQ==",
+  "dgSpecHash": "U3LxPT7o/f7OwQEG57zY1DJPkVXbJnS84eCcNr7ue8CHKAqmHuuWELjfQVHe2wY9ZWrJ36VRhx0b6dZgXXNzMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

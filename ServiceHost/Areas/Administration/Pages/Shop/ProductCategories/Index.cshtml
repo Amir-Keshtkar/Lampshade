@@ -26,8 +26,8 @@
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
-                        <label class="sr-only" ></label>
-                        <input class="form-control" site.js placeholder="نام گروه محصولی">
+                        <label asp-for="SearchModel.Name" class="sr-only"></label>
+                        <input asp-for="SearchModel.Name" class="form-control" placeholder="نام گروه محصولی">
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">مشاهده همه</a>
@@ -57,7 +57,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+                                @foreach(var item in Model.ProductCategories) {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            <img src="@item.Picture" style="width: 70px; height: 70px" alt="@item.Name" />
+                                        </td>
+                                        <td>@item.Name</td>
+                                        <td>@item.CreationDate</td>
+                                        <td>
+                                            <a class="btn btn-warning pull-right m-r-5" href="#showmodal=@Url.Page("./Index","Edit", new { id= item.Id })">
+                                                <i class="fa fa-edit"></i>ویرایش
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>
@@ -67,13 +81,14 @@
     </div>
 </div>
 
-@section Scripts {
-    <script src="~/Admin_Theme/assets/datatables/jquery.dataTables.min.js"></script>
-    <script src="~/Admin_Theme/assets/datatables/dataTables.bootstrap.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#datatable').dataTable();
-        });
-    </script>
+@section Scripts {
+<script src="~/AdminTheme/assets/datatables/jquery.dataTables.min.js"></script>
+<script src="~/AdminTheme/assets/datatables/dataTables.bootstrap.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#datatable').dataTable();
+    });
+</script>
 }

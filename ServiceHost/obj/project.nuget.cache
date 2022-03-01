@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "krINyXfy9y4kLPl0ZsZY98VkldSKRaRKIllvLv2KrGw5GVJMrb0a0DiAwK95lrOVbtyCSQHhBFl8FmEzzHydxg==",
+  "dgSpecHash": "H13u5q8r0LZL0BjYoIrUhOsIoXG1QXkDTjPHKndSI2OaWvvXTZwGCOENJjjb8n9gdi/iBln2OCczSXfQcMEvMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+  "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amiri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

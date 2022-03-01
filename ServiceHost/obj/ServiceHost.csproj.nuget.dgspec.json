@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
         "projectName": "ServiceHost",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj"
               }
             }
           }
@@ -137,14 +137,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
         "projectName": "ShopManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -161,8 +161,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -195,14 +195,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "projectName": "ShopManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -219,11 +219,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -256,14 +256,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
         "projectName": "ShopManagement.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -280,14 +280,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -326,14 +326,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -350,11 +350,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               }
             }
           }
@@ -387,14 +387,14 @@
         }
       }
     },
-    "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj": {
+    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
+        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
         "projectName": "SM.Infrastructure.EfCore",
-        "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
+        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
         "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\obj\\",
+        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -411,8 +411,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }

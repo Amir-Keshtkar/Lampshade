@@ -40,5 +40,12 @@ namespace SM.Infrastructure.EfCore.Repository {
 
             return productCategory.OrderByDescending(x => x.Id).ToList();
         }
+
+        public List<ProductCategoryViewModel> GetProductCategories() {
+            return _shopContext.ProductCategories.Select(x=>new ProductCategoryViewModel {
+                Id=x.Id,
+                Name = x.Name
+            }).ToList();
+        }
     }
 }
