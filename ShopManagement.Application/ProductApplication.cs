@@ -1,5 +1,6 @@
 ﻿using _0_Framework.Application;
 using ShopManagement.Application.Contract.Product;
+using ShopManagement.Application.Contract.ProductPicture;
 using ShopManagement.Domain.ProductAgg;
 
 namespace ShopManagement.Application {
@@ -72,6 +73,14 @@ namespace ShopManagement.Application {
 
         public List<ProductViewModel> Search (ProductSearchModel searchModel) {
             return _productRepository.Search(searchModel);
+        }
+
+        public List<ProductViewModel> GetProducts() {
+            var products=_productRepository.GetAll();
+            return products.Select(x => new ProductViewModel {
+                Id=x.Id,
+                Name = x.Name
+            }).ToList();
         }
     }
 }

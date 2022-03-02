@@ -1,8 +1,9 @@
 ﻿using ShopManagement.Domain.ProductCategoryAgg;
 using _0_Framework.Domain;
+using ShopManagement.Domain.ProductPictureAgg;
 
 namespace ShopManagement.Domain.ProductAgg {
-    public class Product : EntityBase {
+    public class Product: EntityBase {
         public string Name { get; private set; }
         public string Code { get; private set; }
         public double UnitPrice { get; private set; }
@@ -17,6 +18,7 @@ namespace ShopManagement.Domain.ProductAgg {
         public string Keywords { get; private set; }
         public string MetaDescription { get; private set; }
         public ProductCategory? Category { get; private set; }
+        public ICollection<ProductPicture> ProductPictures { get; private set; }
 
         public Product (string name, string code, double unitPrice, string shortDescription, string? description,
             string picture, string pictureAlt, string pictureTitle, long categoryId, string slug,
@@ -53,12 +55,12 @@ namespace ShopManagement.Domain.ProductAgg {
             MetaDescription = metaDescription;
         }
 
-        public void InStock() {
-            this.IsInStock=true;
+        public void InStock () {
+            this.IsInStock = true;
         }
 
-        public void NotInStock() {
-            this.IsInStock=false;
+        public void NotInStock () {
+            this.IsInStock = false;
         }
     }
 }
