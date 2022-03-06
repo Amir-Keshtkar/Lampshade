@@ -3026,6 +3026,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "01_LampshadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SM.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3070,6 +3083,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "SM.Infrastructure.EfCore": "1.0.0",
           "ShopManagement.Application": "1.0.0",
@@ -9492,6 +9506,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampshadeQuery/01_LampshadeQuery.csproj",
+      "msbuildProject": "../01_LampshadeQuery/01_LampshadeQuery.csproj"
     },
     "0_Framework/1.0.0": {
       "type": "project",

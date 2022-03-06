@@ -595,6 +595,19 @@
           }
         }
       },
+      "01_LampshadeQuery/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SM.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_LampshadeQuery.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1828,6 +1841,11 @@
         "version.txt"
       ]
     },
+    "01_LampshadeQuery/1.0.0": {
+      "type": "project",
+      "path": "../01_LampshadeQuery/01_LampshadeQuery.csproj",
+      "msbuildProject": "../01_LampshadeQuery/01_LampshadeQuery.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
@@ -1856,6 +1874,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "01_LampshadeQuery >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
       "SM.Infrastructure.EfCore >= 1.0.0",
       "ShopManagement.Application >= 1.0.0",
@@ -1889,6 +1908,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+            },
             "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
               "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
             },

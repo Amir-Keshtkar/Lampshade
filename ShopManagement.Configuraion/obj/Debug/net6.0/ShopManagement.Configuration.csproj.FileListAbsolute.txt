@@ -44,3 +44,5 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\obj\
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\obj\Debug\net6.0\ShopManagement.Configuration.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\obj\Debug\net6.0\ref\ShopManagement.Configuration.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\obj\Debug\net6.0\ShopManagement.Configuration.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\bin\Debug\net6.0\01_LampshadeQuery.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Configuraion\bin\Debug\net6.0\01_LampshadeQuery.pdb

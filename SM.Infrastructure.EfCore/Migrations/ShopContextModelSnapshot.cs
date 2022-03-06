@@ -211,6 +211,9 @@ namespace SM.Infrastructure.EfCore.Migrations
                     b.Property<bool>("IsRemoved")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Picture")
                         .IsRequired()
                         .HasMaxLength(1000)

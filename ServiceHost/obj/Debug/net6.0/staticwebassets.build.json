@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u13DR80pNiReWlIvBwW8x7t7rhJ+GPwTasr66tNL/rs=",
+  "Hash": "tXD4GIiIx3xWVTUpfhylupvK+F3iQXrY+LE2SSGQ25Q=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -7276,23 +7276,6 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\blog\\slider\\5-370x235.jpg"
     },
     {
-      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\bedroom.jpg",
-      "SourceId": "ServiceHost",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
-      "BasePath": "_content/ServiceHost",
-      "RelativePath": "Theme/assets/img/category/bedroom.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\bedroom.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img1-top-eposi1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7310,12 +7293,12 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img1-top-eposi1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.png",
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
       "BasePath": "_content/ServiceHost",
-      "RelativePath": "Theme/assets/img/category/img2-top-eposi1.png",
+      "RelativePath": "Theme/assets/img/category/img2-top-eposi1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7324,7 +7307,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.png"
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.jpg"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img3-top-eposi1.jpg",
@@ -7342,6 +7325,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img3-top-eposi1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img4-top-eposi1.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/category/img4-top-eposi1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img4-top-eposi1.jpg"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\favicon.ico",
@@ -8364,23 +8364,6 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\testimonial\\testimor3-72x72.png"
     },
     {
-      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\usericon.png",
-      "SourceId": "ServiceHost",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
-      "BasePath": "_content/ServiceHost",
-      "RelativePath": "Theme/assets/img/usericon.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\usericon.png"
-    },
-    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\active.js",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -8413,40 +8396,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\ajax-mail.js"
-    },
-    {
-      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\custom.js",
-      "SourceId": "ServiceHost",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
-      "BasePath": "_content/ServiceHost",
-      "RelativePath": "Theme/assets/js/custom.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\custom.js"
-    },
-    {
-      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\plugins.js",
-      "SourceId": "ServiceHost",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
-      "BasePath": "_content/ServiceHost",
-      "RelativePath": "Theme/assets/js/plugins.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\plugins.js"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\vendors.js",

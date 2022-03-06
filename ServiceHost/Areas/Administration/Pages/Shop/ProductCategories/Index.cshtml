@@ -26,8 +26,8 @@
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
-                        <label asp-for="SearchModel.Name" class="sr-only"></label>
-                        <input asp-for="SearchModel.Name" class="form-control" placeholder="نام گروه محصولی">
+                        <label asp-for="SearchModel!.Name" class="sr-only"></label>
+                        <input asp-for="SearchModel!.Name" class="form-control" placeholder="نام گروه محصولی">
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
                     <a class="btn btn-primary waves-effect waves-light m-l-10" asp-page="./Index">مشاهده همه</a>
@@ -57,7 +57,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach(var item in Model.ProductCategories) {
+                                @foreach(var item in Model.ProductCategories!) {
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>
