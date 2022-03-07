@@ -1,4 +1,5 @@
-﻿using ShopManagement.Application.Contract.ProductCategory;
+﻿using _0_Framework.Application;
+using ShopManagement.Application.Contract.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 using _0_Framework.Infrastructure;
 
@@ -32,7 +33,7 @@ namespace SM.Infrastructure.EfCore.Repository {
                 Id = x.Id,
                 Name = x.Name,
                 Picture = x.Picture,
-                CreationDate = x.CreationDate.ToString(),
+                CreationDate = x.CreationDate.ToFarsi(),
             });
             if(!string.IsNullOrWhiteSpace(searchModel.Name)) {
                 productCategory = productCategory.Where(x => x.Name.Contains(searchModel.Name));

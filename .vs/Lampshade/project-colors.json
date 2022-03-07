@@ -45,7 +45,32 @@
       "ProjectGuid": "4a286369-c958-4770-aecb-cc8b407ff88f",
       "DisplayName": "01_LampshadeQuery",
       "ColorIndex": 7
+    },
+    "5bf9e683-fdfe-4120-b586-b094a5ec38cd": {
+      "ProjectGuid": "5bf9e683-fdfe-4120-b586-b094a5ec38cd",
+      "DisplayName": "DiscountManagement.Domain",
+      "ColorIndex": 8
+    },
+    "9b6b9fdc-552c-4524-9328-1fd44a1af916": {
+      "ProjectGuid": "9b6b9fdc-552c-4524-9328-1fd44a1af916",
+      "DisplayName": "DiscountManagement.Application.Contract",
+      "ColorIndex": 9
+    },
+    "35a836cd-4572-4ea3-a18e-69f0e6e34990": {
+      "ProjectGuid": "35a836cd-4572-4ea3-a18e-69f0e6e34990",
+      "DisplayName": "DiscountManagement.Application",
+      "ColorIndex": 10
+    },
+    "4d85b63f-9cff-422d-882c-3a3e27abebd9": {
+      "ProjectGuid": "4d85b63f-9cff-422d-882c-3a3e27abebd9",
+      "DisplayName": "DiscountManagement.Infrastructure.EFCore",
+      "ColorIndex": 11
+    },
+    "cd2ba94f-45e8-4c50-bcf2-0431813e3c0e": {
+      "ProjectGuid": "cd2ba94f-45e8-4c50-bcf2-0431813e3c0e",
+      "DisplayName": "DiscountManagement.Configuration",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 13
 }
