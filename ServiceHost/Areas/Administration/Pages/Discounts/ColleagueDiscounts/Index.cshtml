@@ -1,18 +1,18 @@
 ﻿@page
-@model ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts.IndexModel
+@model ServiceHost.Areas.Administration.Pages.Discounts.ColleagueDiscounts.IndexModel
 @{
 }
 
 @{
     Layout = "Shared/_AdminLayout";
-    ViewData["title"] = "مدیریت تخفیفات مشتریان";
+    ViewData["title"] = "مدیریت تخفیفات همکاران";
 }
 
 <div class="row">
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">تعریف تخفیف مشتری</a>
+            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">تعریف تخفیف همکار</a>
         </p>
     </div>
 </div>
@@ -26,23 +26,9 @@
             <div class="panel-body">
                 <form class="form-inline" role="form" method="get">
                     <div class="form-group">
-                        <label asp-for="SearchModel!.StartDate" class="sr-only"></label>
-                        <input asp-for="SearchModel!.StartDate" class="form-control persianDateInput">
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="SearchModel!.EndDate" class="sr-only"></label>
-                        <input asp-for="SearchModel!.EndDate" class="form-control persianDateInput">
-                    </div>
-                    <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
                         <select class="form-control" asp-for="SearchModel.ProductId" asp-items="new List<SelectListItem>(Model.Products)">
                             <option value="0">محصولات</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
-                        <select class="form-control" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
-                            <option value="0">گروه محصولات</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
@@ -57,7 +43,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">لیست تخفیفات مشتریان: (@Model.CustomerDiscounts.Count)</h3>
+                <h3 class="panel-title">لیست تخفیفات همکاران: (@Model.ColleagueDiscounts.Count)</h3>
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -68,28 +54,30 @@
                                     <th>#</th>
                                     <th>محصول</th>
                                     <th>درصد تخفیف</th>
-                                    <th>تاریخ شروع</th>
-                                    <th>تاریخ اتمام</th>
-                                    <th>علت تخفیف</th>
                                     <th>تاریخ ایجاد</th>
                                     <th>عملیات</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach(var item in Model.CustomerDiscounts!) {
+                                @foreach(var item in Model.ColleagueDiscounts) {
                                     <tr>
                                         <td>@item.Id</td>
                                         <td>@item.Product</td>
                                         <td>@item.DiscountRate%</td>
-                                        <td>@item.StartDate</td>
-                                        <td>@item.EndDate</td>
-                                        <td>@item.Reason</td>
                                         <td>@item.CreationDate</td>
                                         <td>
                                             <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5" href="#showmodal=@Url.Page("./Index","Edit", new { id= item.Id })">
                                                 <i class="fa fa-edit"></i>ویرایش
                                             </a>
-
+                                            @if(!item.IsRemoved) {
+                                                <a class="btn btn-danger btn-custom waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="Remove" asp-route-id="@item.Id">
+                                                    حذف
+                                                </a>
+                                            } else {
+                                                <a class="btn btn-success btn-custom waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id">
+                                                    فعال سازی
+                                                </a>
+                                            }
                                         </td>
                                     </tr>
                                 }

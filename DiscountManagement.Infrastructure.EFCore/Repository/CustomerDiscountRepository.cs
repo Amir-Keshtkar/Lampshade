@@ -53,8 +53,8 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository {
                 discounts = discounts.Where(x => x.EndDateGr <= searchModel.EndDate.ToGeorgianDateTime());
             }
             var query = discounts.OrderByDescending(x => x.Id).ToList();
-            query.ForEach(x => x.CategoryId = products.FirstOrDefault(y => y.Id == x.ProductId)!.CategoryId);
             if(searchModel.CategoryId > 0) {
+                query.ForEach(x => x.CategoryId = products.FirstOrDefault(y => y.Id == x.ProductId)!.CategoryId);
                 query = query.Where(x => x.CategoryId == searchModel.CategoryId).ToList();
             }
             query.ForEach(x => x.Product = products.FirstOrDefault(y => y.Id == x.ProductId)?.Name);
