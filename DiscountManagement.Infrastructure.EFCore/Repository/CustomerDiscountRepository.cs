@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.CustomerDiscount;
@@ -28,7 +29,8 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository {
         }
 
         public List<CustomerDiscountViewModel> Search (CustomerDiscountSearchModel searchModel) {
-            var products = _shopContext.Products.Select(x => new { x.Name, x.Id }).ToList();
+            var products = _shopContext.Products.Select(x => new { x.Name, x.Id, x.CategoryId }).ToList();
+            var categories = _shopContext.ProductCategories.Select(x => new { x.Name, x.Id }).ToList();
             var discounts = _discountContext.CustomerDiscounts.Select(x => new CustomerDiscountViewModel {
                 Id = x.Id,
                 ProductId = x.ProductId,
@@ -44,6 +46,7 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository {
             if(searchModel.ProductId > 0) {
                 discounts = discounts.Where(x => x.ProductId == searchModel.ProductId);
             }
+
             if(!string.IsNullOrWhiteSpace(searchModel.StartDate)) {
                 discounts = discounts.Where(x => x.StartDateGr >= searchModel.StartDate.ToGeorgianDateTime());
             }
@@ -52,7 +55,13 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository {
             }
 
             var query = discounts.OrderByDescending(x => x.Id).ToList();
-            query.ForEach(x => x.Product = products.FirstOrDefault(y => y.Id == x.ProductId).Name);
+            query.ForEach(x => x.CategoryId = products.FirstOrDefault(y => y.Id == x.ProductId)!.CategoryId);
+            if(searchModel.CategoryId > 0) {
+                query = query.Where(x => x.CategoryId == searchModel.CategoryId).ToList();
+            }
+
+            query.ForEach(x => x.Product = products.FirstOrDefault(y => y.Id == x.ProductId)?.Name);
+            query.ForEach(x => x.Category = categories.FirstOrDefault(y => y.Id == x.CategoryId)?.Name);
 
             return query;
         }

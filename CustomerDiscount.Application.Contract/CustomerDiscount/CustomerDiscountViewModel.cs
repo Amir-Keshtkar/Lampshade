@@ -11,5 +11,7 @@ public class CustomerDiscountViewModel {
     public DateTime EndDateGr { get; set; }
     public string? Reason { get; set; }
     public string? CreationDate { get; set; }
+    public long CategoryId { get; set; }
+    public string? Category { get; set; }
 
 }

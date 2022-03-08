@@ -35,8 +35,14 @@
                     </div>
                     <div class="form-group">
                         <label class="sr-only" asp-for="SearchModel.ProductId"></label>
-                        <select class="form-control" asp-for="SearchModel.ProductId" asp-items="Model.Products">
+                        <select class="form-control" asp-for="SearchModel.ProductId" asp-items="new List<SelectListItem>(Model.Products)">
                             <option value="0">محصولات</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" asp-for="SearchModel.CategoryId"></label>
+                        <select class="form-control" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
+                            <option value="0">گروه محصولات</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-success waves-effect waves-light m-l-10">جستجو</button>
@@ -71,21 +77,21 @@
                             </thead>
                             <tbody>
                                 @foreach(var item in Model.CustomerDiscounts!) {
-                                        <tr>
-                                            <td>@item.Id</td>
-                                            <td>@item.Product</td>
-                                            <td>@item.DiscountRate</td>
-                                            <td>@item.StartDate</td>
-                                            <td>@item.EndDate</td>
-                                            <td>@item.Reason</td>
-                                            <td>@item.CreationDate</td>
-                                            <td>
-                                                <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5" href="#showmodal=@Url.Page("./Index","Edit", new { id= item.Id })">
-                                                    <i class="fa fa-edit"></i>ویرایش
-                                                </a>
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Product</td>
+                                        <td>@item.DiscountRate</td>
+                                        <td>@item.StartDate</td>
+                                        <td>@item.EndDate</td>
+                                        <td>@item.Reason</td>
+                                        <td>@item.CreationDate</td>
+                                        <td>
+                                            <a class="btn btn-warning btn-custom waves-effect waves-light m-b-5" href="#showmodal=@Url.Page("./Index","Edit", new { id= item.Id })">
+                                                <i class="fa fa-edit"></i>ویرایش
+                                            </a>
 
-                                            </td>
-                                        </tr>
+                                        </td>
+                                    </tr>
                                 }
                             </tbody>
                         </table>
@@ -106,4 +112,5 @@
         $('#datatable').dataTable();
     });
 </script>
+
 }
