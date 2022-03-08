@@ -46,23 +46,19 @@ namespace DiscountManagement.Infrastructure.EFCore.Repository {
             if(searchModel.ProductId > 0) {
                 discounts = discounts.Where(x => x.ProductId == searchModel.ProductId);
             }
-
             if(!string.IsNullOrWhiteSpace(searchModel.StartDate)) {
                 discounts = discounts.Where(x => x.StartDateGr >= searchModel.StartDate.ToGeorgianDateTime());
             }
             if(!string.IsNullOrWhiteSpace(searchModel.EndDate)) {
                 discounts = discounts.Where(x => x.EndDateGr <= searchModel.EndDate.ToGeorgianDateTime());
             }
-
             var query = discounts.OrderByDescending(x => x.Id).ToList();
             query.ForEach(x => x.CategoryId = products.FirstOrDefault(y => y.Id == x.ProductId)!.CategoryId);
             if(searchModel.CategoryId > 0) {
                 query = query.Where(x => x.CategoryId == searchModel.CategoryId).ToList();
             }
-
             query.ForEach(x => x.Product = products.FirstOrDefault(y => y.Id == x.ProductId)?.Name);
             query.ForEach(x => x.Category = categories.FirstOrDefault(y => y.Id == x.CategoryId)?.Name);
-
             return query;
         }
     }
