@@ -1,4 +1,4 @@
-﻿namespace InventoryManagement.Application.Inventory;
+﻿namespace InventoryManagement.Application.Contract.Inventory;
 
 public class InventoryViewModel {
     public long Id { get; set; }

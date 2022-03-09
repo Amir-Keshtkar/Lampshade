@@ -1,6 +1,6 @@
 ﻿using _0_Framework.Application;
 
-namespace InventoryManagement.Application.Inventory {
+namespace InventoryManagement.Application.Contract.Inventory{
     public interface IInventoryApplication {
         OperationResult Create(CreateInventory command);
         OperationResult Edit(EditInventory command);

@@ -13,10 +13,15 @@ namespace InventoryManagement.Domain.InventoryAgg {
             InStock = false;
         }
 
-        private long CalculateInventoryStock () {
+        public void Edit (long productId, double unitPrice) {
+            ProductId = productId;
+            UnitPrice = unitPrice;
+        }
+
+        public long CalculateInventoryStock () {
             var plus = Operations.Where(x => x.Operation).Sum(x => x.Count);
-            var Minus = Operations.Where(x => !x.Operation).Sum(x => x.Count);
-            return plus - Minus;
+            var minus = Operations.Where(x => !x.Operation).Sum(x => x.Count);
+            return plus - minus;
         }
 
         public void Increase (long count, long operatorId, string description) {
@@ -26,35 +31,11 @@ namespace InventoryManagement.Domain.InventoryAgg {
             InStock = currentCount > 0;
         }
 
-        public void Decrease(long count, long operatorId, string description, long orderId) {
+        public void Decrease (long count, long operatorId, string description, long orderId) {
             var currentCount = CalculateInventoryStock() - count;
-            var inventoryOperation = new InventoryOperation(false,count,operatorId,currentCount,description,orderId,Id);
+            var inventoryOperation = new InventoryOperation(false, count, operatorId, currentCount, description, orderId, Id);
             Operations.Add(inventoryOperation);
-            InStock=currentCount > 0;
-        }
-    }
-
-    public class InventoryOperation {
-        public long Id { get; private set; }
-        public bool Operation { get; private set; }
-        public long Count { get; private set; }
-        public long OperatorId { get; private set; }
-        public DateTime OperationDate { get; private set; }
-        public long CurrentCount { get; private set; }
-        public string Description { get; private set; }
-        public long OrderId { get; private set; }
-        public long InventoryId { get; private set; }
-        public Inventory Inventory { get; private set; }
-
-        public InventoryOperation (bool operation, long count, long operatorId, long currentCount, string description, long orderId, long inventoryId) {
-            Operation = operation;
-            Count = count;
-            OperatorId = operatorId;
-            CurrentCount = currentCount;
-            Description = description;
-            OrderId = orderId;
-            InventoryId = inventoryId;
-            OperationDate = DateTime.Now;
+            InStock = currentCount > 0;
         }
     }
 }

@@ -9,6 +9,7 @@
       "ServiceHost/1.0.0": {
         "dependencies": {
           "DiscountManagement.Configuration": "1.0.0",
+          "InventoryManagement.Infrastructure.Configuration": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.2",
           "ShopManagement.Configuration": "1.0.0"
@@ -2203,7 +2204,7 @@
       },
       "01_LampshadeQuery/1.0.0": {
         "dependencies": {
-          "SM.Infrastructure.EfCore": "1.0.0"
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "runtime": {
           "01_LampshadeQuery.dll": {}
@@ -2259,10 +2260,50 @@
           "DiscountManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
-          "SM.Infrastructure.EfCore": "1.0.0"
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "runtime": {
           "DiscountManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "InventoryManagement.Application.Contract/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Application.Contract.dll": {}
+        }
+      },
+      "InventoryManagement.Domain/1.0.0": {
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Domain.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastructure.Configuration/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0",
+          "InventoryManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "InventoryManagement.Infrastructure.EFCore/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "InventoryManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+        },
+        "runtime": {
+          "InventoryManagement.Infrastructure.EFCore.dll": {}
         }
       },
       "ShopManagement.Application/1.0.0": {
@@ -2286,9 +2327,9 @@
         "dependencies": {
           "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "SM.Infrastructure.EfCore": "1.0.0",
           "ShopManagement.Application": "1.0.0",
-          "ShopManagement.Domain": "1.0.0"
+          "ShopManagement.Domain": "1.0.0",
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Configuration.dll": {}
@@ -2303,14 +2344,14 @@
           "ShopManagement.Domain.dll": {}
         }
       },
-      "SM.Infrastructure.EfCore/1.0.0": {
+      "ShopManagement.Infrastructure.EfCore/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "ShopManagement.Domain": "1.0.0"
         },
         "runtime": {
-          "SM.Infrastructure.EfCore.dll": {}
+          "ShopManagement.Infrastructure.EfCore.dll": {}
         }
       }
     }
@@ -3546,6 +3587,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "InventoryManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InventoryManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -3566,7 +3627,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "SM.Infrastructure.EfCore/1.0.0": {
+    "ShopManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

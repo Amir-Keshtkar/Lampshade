@@ -1921,9 +1921,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
-      "projectName": "SM.Infrastructure.EfCore",
-      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\SM.Infrastructure.EfCore.csproj",
+      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+      "projectName": "ShopManagement.Infrastructure.EfCore",
+      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
       "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\obj\\",
       "projectStyle": "PackageReference",

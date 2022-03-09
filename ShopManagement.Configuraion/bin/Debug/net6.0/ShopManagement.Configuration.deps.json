@@ -10,9 +10,9 @@
         "dependencies": {
           "01_LampshadeQuery": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "SM.Infrastructure.EfCore": "1.0.0",
           "ShopManagement.Application": "1.0.0",
-          "ShopManagement.Domain": "1.0.0"
+          "ShopManagement.Domain": "1.0.0",
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "runtime": {
           "ShopManagement.Configuration.dll": {}
@@ -462,7 +462,7 @@
       },
       "01_LampshadeQuery/1.0.0": {
         "dependencies": {
-          "SM.Infrastructure.EfCore": "1.0.0"
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
         },
         "runtime": {
           "01_LampshadeQuery.dll": {}
@@ -502,14 +502,14 @@
           "ShopManagement.Domain.dll": {}
         }
       },
-      "SM.Infrastructure.EfCore/1.0.0": {
+      "ShopManagement.Infrastructure.EfCore/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "ShopManagement.Domain": "1.0.0"
         },
         "runtime": {
-          "SM.Infrastructure.EfCore.dll": {}
+          "ShopManagement.Infrastructure.EfCore.dll": {}
         }
       }
     }
@@ -825,7 +825,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "SM.Infrastructure.EfCore/1.0.0": {
+    "ShopManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

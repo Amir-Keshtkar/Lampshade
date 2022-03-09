@@ -2,13 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_01_LampshadeQuery</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SM.Infrastructure.EfCore\ShopManagement.Infrastructure.EfCore.csproj" />
+    <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
   </ItemGroup>
 
 </Project>
