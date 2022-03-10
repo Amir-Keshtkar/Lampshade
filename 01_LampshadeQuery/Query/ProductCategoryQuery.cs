@@ -1,5 +1,5 @@
 ﻿using _01_LampshadeQuery.Contract.ProductCategory;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 namespace _01_LampshadeQuery.Query {
     public class ProductCategoryQuery : IProductCategoryQuery{

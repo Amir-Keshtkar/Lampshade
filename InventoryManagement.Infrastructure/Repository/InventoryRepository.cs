@@ -1,51 +1,69 @@
-﻿using _0_Framework.Infrastructure;
+﻿using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 namespace InventoryManagement.Infrastructure.EFCore.Repository {
-    public class InventoryRepository : RepositoryBase<long, Inventory>, IInventoryRepository {
+    public class InventoryRepository: RepositoryBase<long, Inventory>, IInventoryRepository {
         private readonly InventoryContext _context;
         private readonly ShopContext _shopContext;
-        public InventoryRepository(InventoryContext context, ShopContext shopContext) : base(context) {
+        public InventoryRepository (InventoryContext context, ShopContext shopContext) : base(context) {
             _context = context;
             _shopContext = shopContext;
         }
 
-        public EditInventory? GetDetails(long id) {
+        public EditInventory? GetDetails (long id) {
             return _context.Inventory.Select(x => new EditInventory {
                 Id = x.Id,
                 ProductId = x.ProductId,
                 UnitPrice = x.UnitPrice,
-            }).FirstOrDefault(x=>x.Id==id);
+            }).FirstOrDefault(x => x.Id == id);
         }
 
-        public List<InventoryViewModel> Search(InventorySearchModel searchModel) {
-            var products = _shopContext.Products.Select(x => new { x.Id, x.Name});
+        public List<InventoryViewModel> Search (InventorySearchModel searchModel) {
+            var products = _shopContext.Products.Select(x => new { x.Id, x.Name });
             var query = _context.Inventory.Select(x => new InventoryViewModel {
                 Id = x.Id,
                 InStock = x.InStock,
                 ProductId = x.ProductId,
                 UnitPrice = x.UnitPrice,
-                CurrentCount = x.CalculateInventoryStock()
+                CurrentCount = x.CalculateInventoryStock(),
+                CreationDate = x.CreationDate.ToFarsi()
             });
-            if (!searchModel.InStock) {
+            if(searchModel.InStock) {
                 query = query.Where(x => !x.InStock);
             }
 
-            if (searchModel.ProductId>0) {
+            if(searchModel.ProductId > 0) {
                 query = query.Where(x => x.ProductId == searchModel.ProductId);
             }
 
-            var inventory = query.OrderByDescending(x=>x.Id).ToList();
-            inventory.ForEach(item=> {
+            var inventory = query.OrderByDescending(x => x.Id).ToList();
+            inventory.ForEach(item => {
                 item.Product = products.FirstOrDefault(x => x.Id == item.ProductId)?.Name;
             });
             return inventory;
         }
 
-        public Inventory GetByProductId(long productId) {
-            return _context.Inventory.FirstOrDefault(x => x.ProductId==productId);
+        public Inventory GetByProductId (long productId) {
+            return _context.Inventory.FirstOrDefault(x => x.ProductId == productId);
+        }
+
+        public List<InventoryOperationViewModel> GetOperationLog (long inventoryId) {
+            var inventory = _context.Inventory.FirstOrDefault(x => x.Id == inventoryId);
+            return inventory.Operations.Select(x => new InventoryOperationViewModel {
+                Id = x.Id,
+                Count = x.Count,
+                CurrentCount = x.CurrentCount,
+                Description = x.Description,
+                OperationDate = x.OperationDate.ToFarsi(),
+                OperatorId = x.OperatorId,
+                Operator = "مدیر سیستم",
+                Operation = x.Operation,
+                OrderId = x.OrderId,
+                InventoryId = x.InventoryId,
+            }).OrderByDescending(x=>x.Id).ToList();
         }
     }
 }

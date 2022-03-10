@@ -1,11 +1,10 @@
-﻿using System.Globalization;
-using _0_Framework.Application;
+﻿using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contract.Product;
 using ShopManagement.Domain.ProductAgg;
 
-namespace SM.Infrastructure.EfCore.Repository {
+namespace ShopManagement.Infrastructure.EfCore.Repository {
     public class ProductRepository: RepositoryBase<long, Product>, IProductRepository {
         private readonly ShopContext _context;
 
@@ -23,12 +22,11 @@ namespace SM.Infrastructure.EfCore.Repository {
                 Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
                 PictureAlt = x.PictureAlt,
-                UnitPrice = x.UnitPrice,
                 Slug = x.Slug,
                 MetaDescription = x.MetaDescription,
                 Keywords = x.Keywords,
                 CategoryId = x.CategoryId
-            }).FirstOrDefault(x => x.Id == id) ?? throw new InvalidOperationException();
+            }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<ProductViewModel> Search (ProductSearchModel searchModel) {
@@ -37,11 +35,9 @@ namespace SM.Infrastructure.EfCore.Repository {
                     Id = x.Id,
                     Name = x.Name,
                     Code = x.Code,
-                    UnitPrice = x.UnitPrice,
                     Picture = x.Picture,
                     Category = x.Category.Name,
                     CategoryId= x.CategoryId,
-                    IsInStock = x.IsInStock,
                     CreationDate = x.CreationDate.ToFarsi(),
                 });
             if(!string.IsNullOrWhiteSpace(searchModel.Name)) {

@@ -13,8 +13,8 @@ using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.SlideAgg;
-using SM.Infrastructure.EfCore;
-using SM.Infrastructure.EfCore.Repository;
+using ShopManagement.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore.Repository;
 
 namespace ShopManagement.Configuration {
     public class ShopManagementBootstrapper {

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contract.Slide;
 using ShopManagement.Domain.SlideAgg;
 
-namespace SM.Infrastructure.EfCore.Repository {
+namespace ShopManagement.Infrastructure.EfCore.Repository {
     public class SlideRepository: RepositoryBase<long, Slide>, ISlideRepository {
         private readonly ShopContext _context;
         public SlideRepository (ShopContext context) : base(context) {

@@ -12,6 +12,8 @@ public class InventoryOperation {
     public long InventoryId { get; private set; }
     public Inventory Inventory { get; private set; }
 
+    public InventoryOperation () {
+    }
     public InventoryOperation (bool operation, long count, long operatorId, long currentCount, string description, long orderId, long inventoryId) {
         Operation = operation;
         Count = count;

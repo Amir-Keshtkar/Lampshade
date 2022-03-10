@@ -2,8 +2,7 @@
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.ColleagueDiscount;
 using DiscountManagement.Domain.ColleagueDiscountAgg;
-using Microsoft.EntityFrameworkCore;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository {
     public class ColleagueDiscountRepository: RepositoryBase<long, ColleagueDiscount>, IColleagueDiscountRepository {

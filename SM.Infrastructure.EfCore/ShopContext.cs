@@ -3,9 +3,9 @@ using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.SlideAgg;
-using SM.Infrastructure.EfCore.Mapping;
+using ShopManagement.Infrastructure.EfCore.Mapping;
 
-namespace SM.Infrastructure.EfCore {
+namespace ShopManagement.Infrastructure.EfCore {
     public class ShopContext: DbContext {
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Product> Products { get; set; }

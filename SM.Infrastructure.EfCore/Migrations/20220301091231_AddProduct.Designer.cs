@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 #nullable disable
 
-namespace SM.Infrastructure.EfCore.Migrations
+namespace ShopManagement.Infrastructure.EfCore.Migrations
 {
     [DbContext(typeof(ShopContext))]
     [Migration("20220301091231_AddProduct")]

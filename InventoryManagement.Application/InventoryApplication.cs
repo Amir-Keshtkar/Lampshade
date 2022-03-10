@@ -1,5 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using _0_Framework.Application;
+﻿using _0_Framework.Application;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 
@@ -79,6 +78,10 @@ namespace InventoryManagement.Application {
 
         public List<InventoryViewModel> Search (InventorySearchModel searchModel) {
             return _inventoryRepository.Search(searchModel);
+        }
+
+        public List<InventoryOperationViewModel> GetOperations(long inventoryId) {
+            return _inventoryRepository.GetOperationLog(inventoryId);
         }
     }
 }

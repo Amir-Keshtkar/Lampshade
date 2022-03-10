@@ -3,7 +3,7 @@ using ShopManagement.Application.Contract.ProductCategory;
 using ShopManagement.Domain.ProductCategoryAgg;
 using _0_Framework.Infrastructure;
 
-namespace SM.Infrastructure.EfCore.Repository {
+namespace ShopManagement.Infrastructure.EfCore.Repository {
     public class ProductCategoryRepository: RepositoryBase<long, ProductCategory>, IProductCategoryRepository {
         private readonly ShopContext _shopContext;
 

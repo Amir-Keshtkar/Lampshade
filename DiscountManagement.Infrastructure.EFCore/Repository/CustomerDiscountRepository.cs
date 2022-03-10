@@ -1,11 +1,9 @@
 ﻿using System.Globalization;
-using System.Security.Cryptography.X509Certificates;
 using _0_Framework.Application;
 using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.CustomerDiscount;
 using DiscountManagement.Domain.CustomerDiscountAgg;
-using Microsoft.EntityFrameworkCore;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 namespace DiscountManagement.Infrastructure.EFCore.Repository {
     public class CustomerDiscountRepository: RepositoryBase<long, CustomerDiscount>, ICustomerDiscountRepository {

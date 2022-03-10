@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopManagement.Domain.ProductAgg;
 
-namespace SM.Infrastructure.EfCore.Mapping {
+namespace ShopManagement.Infrastructure.EfCore.Mapping {
     public class ProductMapping: IEntityTypeConfiguration<Product> {
 
         public void Configure (EntityTypeBuilder<Product> builder) {

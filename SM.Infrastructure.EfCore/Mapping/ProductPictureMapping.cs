@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShopManagement.Domain.ProductPictureAgg;
 
-namespace SM.Infrastructure.EfCore.Mapping {
+namespace ShopManagement.Infrastructure.EfCore.Mapping {
     internal class ProductPictureMapping: IEntityTypeConfiguration<ProductPicture> {
         public void Configure (EntityTypeBuilder<ProductPicture> builder) {
-            builder.ToTable("ProductPicturesRepository");
+            builder.ToTable("ProductPictures");
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Picture).HasMaxLength(1000).IsRequired();

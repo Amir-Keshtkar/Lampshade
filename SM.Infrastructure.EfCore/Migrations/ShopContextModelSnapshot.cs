@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SM.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
 
 #nullable disable
 
@@ -43,9 +43,6 @@ namespace SM.Infrastructure.EfCore.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsInStock")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Keywords")
                         .IsRequired()
@@ -86,9 +83,6 @@ namespace SM.Infrastructure.EfCore.Migrations
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
-
-                    b.Property<double>("UnitPrice")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -184,7 +178,7 @@ namespace SM.Infrastructure.EfCore.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductPicturesRepository", (string)null);
+                    b.ToTable("ProductPictures", (string)null);
                 });
 
             modelBuilder.Entity("ShopManagement.Domain.SlideAgg.Slide", b =>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SM.Infrastructure.EfCore.Migrations
+namespace ShopManagement.Infrastructure.EfCore.Migrations
 {
     public partial class addSlide : Migration
     {

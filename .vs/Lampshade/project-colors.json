@@ -90,7 +90,22 @@
       "ProjectGuid": "6adc7463-91cd-4e36-8e1b-e40b4d96cc27",
       "DisplayName": "InventoryManagement.Application",
       "ColorIndex": 0
+    },
+    "2bcd6d63-853b-4f2c-af1a-e46b5bf2d740": {
+      "ProjectGuid": "2bcd6d63-853b-4f2c-af1a-e46b5bf2d740",
+      "DisplayName": "InventoryManagement.Application.Contract",
+      "ColorIndex": 1
+    },
+    "6ea83961-049b-44a7-aa7b-c16c0dee829a": {
+      "ProjectGuid": "6ea83961-049b-44a7-aa7b-c16c0dee829a",
+      "DisplayName": "InventoryManagement.Application",
+      "ColorIndex": 2
+    },
+    "f0d9a753-b33f-4814-90ed-f6b9f387fe55": {
+      "ProjectGuid": "f0d9a753-b33f-4814-90ed-f6b9f387fe55",
+      "DisplayName": "InventoryManagement.Infrastructure.Configuration",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

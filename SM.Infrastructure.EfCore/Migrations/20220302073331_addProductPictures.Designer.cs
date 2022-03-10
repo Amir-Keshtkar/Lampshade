@@ -9,7 +9,7 @@ using SM.Infrastructure.EfCore;
 
 #nullable disable
 
-namespace SM.Infrastructure.EfCore.Migrations
+namespace ShopManagement.Infrastructure.EfCore.Migrations
 {
     [DbContext(typeof(ShopContext))]
     [Migration("20220302073331_addProductPictures")]
