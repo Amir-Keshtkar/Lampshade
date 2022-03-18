@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tXD4GIiIx3xWVTUpfhylupvK+F3iQXrY+LE2SSGQ25Q=",
+  "Hash": "pXTrbMp1sCke0sJppy+Mxt4e+uXu8cW747bk7cTd704=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -7276,6 +7276,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\blog\\slider\\5-370x235.jpg"
     },
     {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\bedroom.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/category/bedroom.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\bedroom.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img1-top-eposi1.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7308,6 +7325,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/category/img2-top-eposi1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\category\\img2-top-eposi1.png"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\category\\img3-top-eposi1.jpg",
@@ -7378,6 +7412,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider1.jpg"
     },
     {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\hero-slider\\slider1-eposi1-1820x785.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/hero-slider/slider1-eposi1-1820x785.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider1-eposi1-1820x785.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\hero-slider\\slider2.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7395,6 +7446,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider2.jpg"
     },
     {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\hero-slider\\slider2-eposi1-1820x785.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/hero-slider/slider2-eposi1-1820x785.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider2-eposi1-1820x785.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\hero-slider\\slider3.jpg",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -7410,6 +7478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\hero-slider\\slider3-eposi1-1820x785.jpg",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/hero-slider/slider3-eposi1-1820x785.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\hero-slider\\slider3-eposi1-1820x785.jpg"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\icons\\de-de.png",
@@ -8364,6 +8449,23 @@
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\testimonial\\testimor3-72x72.png"
     },
     {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\img\\usericon.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/img/usericon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\img\\usericon.png"
+    },
+    {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\active.js",
       "SourceId": "ServiceHost",
       "SourceType": "Discovered",
@@ -8396,6 +8498,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\ajax-mail.js"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\custom.js",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\custom.js"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\plugins.js",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "Theme/assets/js/plugins.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Theme\\assets\\js\\plugins.js"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\Theme\\assets\\js\\vendors.js",

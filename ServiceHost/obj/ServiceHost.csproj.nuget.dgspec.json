@@ -28,6 +28,12 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              },
+              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
+              },
               "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
                 "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
