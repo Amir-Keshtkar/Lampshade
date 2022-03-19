@@ -12,6 +12,5 @@ namespace _01_LampshadeQuery.Contract.ProductCategory {
         public string? MetaDescription { get; set; }
         public string? Description { get; set; }
         public List<ProductQueryModel> Products { get; set; }
-
     }
 }
