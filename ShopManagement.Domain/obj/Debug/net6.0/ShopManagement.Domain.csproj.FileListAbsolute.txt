@@ -32,3 +32,11 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\obj\Debug\
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\obj\Debug\net6.0\ShopManagement.Domain.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\obj\Debug\net6.0\ref\ShopManagement.Domain.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\obj\Debug\net6.0\ShopManagement.Domain.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Domain\bin\Debug\net6.0\Microsoft.Extensions.Features.xml

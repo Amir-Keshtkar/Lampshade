@@ -1,12 +1,33 @@
-﻿namespace ShopManagement.Application.Contract.Slide {
+﻿using System.ComponentModel.DataAnnotations;
+using _0_Framework.Application;
+using Microsoft.AspNetCore.Http;
+
+namespace ShopManagement.Application.Contract.Slide {
     public class CreateSlide {
-        public string? Picture { get; set; }
-        public string? PictureAlt { get; set; }
-        public string? PictureTitle { get; set; }
-        public string? Heading { get; set; }
-        public string? Title { get; set; }
-        public string? Text { get; set; }
-        public string? BtnText { get; set; }
-        public string? Link { get; set; }
+
+        [FileExtensionLimitation(new string[] { ".jpg", ".jpeg", ".png" }, ErrorMessage = ValidationMessages.InvalidFileFormat)]
+        [MaxFileSize(3 * 1024 * 1024, ErrorMessage = ValidationMessages.MaxFileSize)]
+        public IFormFile? Picture { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string PictureAlt { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string PictureTitle { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string Heading { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string Title { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string Text { get; set; }
+
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string BtnText { get; set; }
+        
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string Link { get; set; }
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FjPuGRXTeDrruG6PnGe3C2ClPETLgxOApTxNAMCdg0pefhO7wfxiDY3jXK8wL84uyPhY+qEbgW5Wh43lXScy0g==",
+  "dgSpecHash": "nEwEyORpbkWYEpBiZ3f/Zk2x6bJpLm/WfNy55rc6yOfw3O3yzCMo6xgG5kzdZqc35dsCG0+gZyfiw/ZAgyjSVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.15\\microsoft.aspnetcore.http.features.5.0.15.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\microsoft.entityframeworkcore.6.0.2.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\microsoft.entityframeworkcore.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.2\\microsoft.entityframeworkcore.analyzers.6.0.2.nupkg.sha512",
@@ -17,6 +18,7 @@
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Amiri\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

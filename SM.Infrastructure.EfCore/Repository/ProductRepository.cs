@@ -19,14 +19,18 @@ namespace ShopManagement.Infrastructure.EfCore.Repository {
                 Code = x.Code,
                 ShortDescription = x.ShortDescription,
                 Description = x.Description,
-                Picture = x.Picture,
+                //Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
                 PictureAlt = x.PictureAlt,
                 Slug = x.Slug,
                 MetaDescription = x.MetaDescription,
                 Keywords = x.Keywords,
                 CategoryId = x.CategoryId
-            }).FirstOrDefault(x => x.Id == id);
+            }).FirstOrDefault(x => x.Id == id)!;
+        }
+
+        public Product GetProductWithCategoryById (long id) {
+            return _context.Products.Include(x=>x.Category).FirstOrDefault(x=>x.Id==id);
         }
 
         public List<ProductViewModel> Search (ProductSearchModel searchModel) {
@@ -37,7 +41,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository {
                     Code = x.Code,
                     Picture = x.Picture,
                     Category = x.Category.Name,
-                    CategoryId= x.CategoryId,
+                    CategoryId = x.CategoryId,
                     CreationDate = x.CreationDate.ToFarsi(),
                 });
             if(!string.IsNullOrWhiteSpace(searchModel.Name)) {
@@ -48,8 +52,8 @@ namespace ShopManagement.Infrastructure.EfCore.Repository {
                 query = query.Where(x => x.Code.Contains(searchModel.Code));
             }
 
-            if (searchModel.CategoryId != 0) {
-                query=query.Where(x=>x.CategoryId==searchModel.CategoryId);
+            if(searchModel.CategoryId != 0) {
+                query = query.Where(x => x.CategoryId == searchModel.CategoryId);
             }
             return query.OrderByDescending(x => x.Id).ToList();
         }

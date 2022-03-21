@@ -21,3 +21,13 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_F
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\ref\0_Framework.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.csproj.AssemblyReference.cache
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\Microsoft.Extensions.Features.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.csproj.CopyComplete

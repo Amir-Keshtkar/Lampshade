@@ -58,12 +58,12 @@
                                                     {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
                                                 ]'>
                                                 <div class="single-image">
-                                                    <img src="@Model.product.Picture" class="img-fluid"
+                                                    <img src="~/UploadedPictures/@Model.product.Picture" class="img-fluid"
                                                          alt="@Model.product.PictureAlt" title="@Model.product.PictureTitle">
                                                 </div>
                                                 @foreach (var picture in Model.product.Pictures) {
                                                     <div class="single-image">
-                                                        <img src="@picture.Picture" class="img-fluid" alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                                                        <img src="~/UploadedPictures/@picture.Picture" class="img-fluid" alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                     </div>
                                                 }
                                             </div>
@@ -90,12 +90,12 @@
                                                 {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
                                             ]'>
                                             <div class="single-image">
-                                                <img src="@Model.product.Picture" class="img-fluid"
+                                                <img src="~/UploadedPictures/@Model.product.Picture" class="img-fluid"
                                                      alt="@Model.product.PictureAlt" title="@Model.product.PictureTitle">
                                             </div>
                                             @foreach (var picture in Model.product.Pictures) {
                                                 <div class="single-image">
-                                                    <img src="@picture.Picture" class="img-fluid" alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                                                    <img src="~/UploadedPictures/@picture.Picture" class="img-fluid" alt="@picture.PictureAlt" title="@picture.PictureTitle">
                                                 </div>
                                             }
                                         </div>

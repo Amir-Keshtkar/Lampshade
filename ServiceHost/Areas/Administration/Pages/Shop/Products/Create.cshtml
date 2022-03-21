@@ -40,13 +40,10 @@
                     <span asp-validation-for="CategoryId" class="error"></span>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Picture" class="control-label">عکس</label>
-                    <input type="text" class="form-control" asp-for="Picture">
+                    <input type="file" class="fileUpload" accept="image/*" asp-for="Picture">
                     <span asp-validation-for="Picture" class="error"></span>
                 </div>
             </div>
@@ -67,7 +64,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group no-margin">
@@ -82,7 +79,7 @@
             <div class="col-md-12">
                 <div class="form-group no-margin">
                     <label asp-for="Description" class="control-label">توضیحات</label>
-                    <textarea class="form-control autogrow" asp-for="Description" 
+                    <textarea class="form-control autogrow" asp-for="Description"
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="Description" class="error"></span>
                 </div>

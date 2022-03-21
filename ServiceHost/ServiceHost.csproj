@@ -28,4 +28,9 @@
     <_ContentIncludedByDefault Remove="Pages\Shared\Components\LatestArrivals\Default.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\UploadedPictures\" />
+    <Folder Include="wwwroot\UploadedPictures\دکوری\صندلی-پاف-مدل-2\" />
+  </ItemGroup>
+
 </Project>

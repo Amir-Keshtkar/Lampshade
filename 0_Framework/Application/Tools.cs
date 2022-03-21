@@ -80,7 +80,6 @@ namespace _0_Framework.Application {
             return c.ToDateTime(year, month, day, 0, 0, 0, 0);
         }
 
-
         public static DateTime ToGeorgianDateTime (this string persianDate) {
             persianDate = persianDate.ToEnglishNumber();
             var year = Convert.ToInt32(persianDate.Substring(0, 4));

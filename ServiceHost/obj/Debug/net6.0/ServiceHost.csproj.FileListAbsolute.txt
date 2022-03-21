@@ -571,3 +571,4 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\Ser
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Application.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.MvcApplicationPartsAssemblyInfo.cs
