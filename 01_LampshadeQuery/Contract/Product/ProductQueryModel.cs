@@ -20,7 +20,12 @@
         public string? Code { get; set; }
         public bool IsInStock { get; set; }
         public List<ProductPictureQueryModel> Pictures { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
+    }
 
-
+    public class CommentQueryModel {
+        public string Name { get; set; }
+        public string Message { get; set; }
+        public long Id { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using _01_LampshadeQuery.Contract.Product;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
+using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EfCore;
@@ -66,6 +67,7 @@ namespace _01_LampshadeQuery.Query {
             var product = _shopContext.Products
                 .Include(x => x.Category)
                 .Include(x => x.ProductPictures)
+                .Include(x => x.Comments)
                 .Select(x => new ProductQueryModel {
                     Id = x.Id,
                     Category = x.Category.Name,
@@ -81,6 +83,7 @@ namespace _01_LampshadeQuery.Query {
                     Code = x.Code,
                     CategorySlug = x.Category.Slug,
                     Pictures = MapProductPictures(x.ProductPictures),
+                    Comments = MapComments(x.Comments)
                 }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
             if(product == null) {
@@ -122,13 +125,13 @@ namespace _01_LampshadeQuery.Query {
                     PictureTitle = x.PictureTitle,
                     Slug = x.Slug,
                     CategorySlug = x.Category.Slug,
-                    ShortDescription= x.ShortDescription
+                    ShortDescription = x.ShortDescription
                 }).AsNoTracking();
 
-            if (!string.IsNullOrWhiteSpace(value)) {
-                query=query.Where(x =>x.Name.Contains(value) || x.ShortDescription.Contains(value) );
+            if(!string.IsNullOrWhiteSpace(value)) {
+                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription.Contains(value));
             }
-            var products=query.OrderByDescending(x=>x.Id).ToList();
+            var products = query.OrderByDescending(x => x.Id).ToList();
             foreach(var product in products) {
                 var inventoryPrice = inventory.FirstOrDefault(x => x.ProductId == product.Id);
                 var productDiscount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
@@ -159,6 +162,15 @@ namespace _01_LampshadeQuery.Query {
                 ProductId = x.ProductId,
                 IsRemoved = x.IsRemoved
             }).Where(x => !x.IsRemoved).ToList();
+        }
+
+        private static List<CommentQueryModel> MapComments (List<Comment> comments) {
+            return comments.Where(x => !x.IsCanceled && x.IsConfirmed)
+                .Select(x => new CommentQueryModel {
+                    Id = x.Id,
+                    Message = x.Message,
+                    Name = x.Name
+                }).OrderByDescending(x=>x.Id).ToList();
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ShopManagement.Infrastructure.EfCore.Mapping {
             builder.Property(x => x.Picture).HasMaxLength(1000);
             builder.Property(x => x.PictureAlt).HasMaxLength(250);
             builder.Property(x => x.PictureTitle).HasMaxLength(500);
-            
+
             //builder.Property(x => x.UnitPrice);
             //builder.Property(x => x.CategoryId);
             //builder.Property(x => x.IsInStock);
@@ -29,6 +29,10 @@ namespace ShopManagement.Infrastructure.EfCore.Mapping {
                 .HasForeignKey(x => x.CategoryId);
 
             builder.HasMany(x => x.ProductPictures)
+                .WithOne(x => x.Product)
+                .HasForeignKey(x => x.ProductId);
+
+            builder.HasMany(x => x.Comments)
                 .WithOne(x => x.Product)
                 .HasForeignKey(x => x.ProductId);
 
