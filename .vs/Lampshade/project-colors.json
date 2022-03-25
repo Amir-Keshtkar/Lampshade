@@ -28,7 +28,7 @@
     },
     "37eb6996-87e7-4303-a9c0-201a5b4d3fa9": {
       "ProjectGuid": "37eb6996-87e7-4303-a9c0-201a5b4d3fa9",
-      "DisplayName": "ShopManagement.Configuration",
+      "DisplayName": "ShopManagement.Infrastructure.Configuration",
       "ColorIndex": 5
     },
     "7334bd9f-9370-4f0c-a229-1db33e6619ae": {
@@ -68,7 +68,7 @@
     },
     "cd2ba94f-45e8-4c50-bcf2-0431813e3c0e": {
       "ProjectGuid": "cd2ba94f-45e8-4c50-bcf2-0431813e3c0e",
-      "DisplayName": "DiscountManagement.Configuration",
+      "DisplayName": "DiscountManagement.Infrastructure.Configuration",
       "ColorIndex": 12
     },
     "ccb2257c-ef5f-47b8-bb73-fafd53eaafc0": {
@@ -105,7 +105,32 @@
       "ProjectGuid": "f0d9a753-b33f-4814-90ed-f6b9f387fe55",
       "DisplayName": "InventoryManagement.Infrastructure.Configuration",
       "ColorIndex": 3
+    },
+    "80466533-de81-41ef-b0aa-b09e0074146e": {
+      "ProjectGuid": "80466533-de81-41ef-b0aa-b09e0074146e",
+      "DisplayName": "BlogManagement.Domain",
+      "ColorIndex": 4
+    },
+    "99785917-1cd1-483c-8f8c-525fdf20540f": {
+      "ProjectGuid": "99785917-1cd1-483c-8f8c-525fdf20540f",
+      "DisplayName": "BlogManagement.Application.Contract",
+      "ColorIndex": 5
+    },
+    "ec1b774a-0663-41de-96b5-f07a714db6a7": {
+      "ProjectGuid": "ec1b774a-0663-41de-96b5-f07a714db6a7",
+      "DisplayName": "BlogManagement.Application",
+      "ColorIndex": 6
+    },
+    "91b98756-40fc-4f35-bbcb-f26807b3a427": {
+      "ProjectGuid": "91b98756-40fc-4f35-bbcb-f26807b3a427",
+      "DisplayName": "BlogManagement.Infrastructure.EFCore",
+      "ColorIndex": 7
+    },
+    "41e133fe-f71f-424a-a0d1-f9aff07ce8e7": {
+      "ProjectGuid": "41e133fe-f71f-424a-a0d1-f9aff07ce8e7",
+      "DisplayName": "BlogManagement.Infrastructure.Configuration",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 9
 }

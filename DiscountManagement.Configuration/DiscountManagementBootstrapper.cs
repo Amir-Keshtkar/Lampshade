@@ -8,7 +8,7 @@ using DiscountManagement.Infrastructure.EFCore.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DiscountManagement.Configuration {
+namespace DiscountManagement.Infrastructure.Configuration {
     public class DiscountManagementBootstrapper {
         public static void Configure (IServiceCollection service, string connectionString) {
             service.AddTransient<ICustomerDiscountApplication, CustomerDiscountApplication>();

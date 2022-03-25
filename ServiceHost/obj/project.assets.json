@@ -3068,6 +3068,79 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "BlogManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Application.Contract": "1.0.0",
+          "BlogManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.dll": {}
+        }
+      },
+      "BlogManagement.Application.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "Microsoft.AspNetCore.Http.Features": "5.0.15"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Application.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Application.Contract.dll": {}
+        }
+      },
+      "BlogManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "BlogManagement.Application.Contract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Domain.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Application": "1.0.0",
+          "BlogManagement.Application.Contract": "1.0.0",
+          "BlogManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.Configuration.dll": {}
+        }
+      },
+      "BlogManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BlogManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BlogManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BlogManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "DiscountManagement.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3096,21 +3169,6 @@
           "bin/placeholder/DiscountManagement.Application.Contract.dll": {}
         }
       },
-      "DiscountManagement.Configuration/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DiscountManagement.Application": "1.0.0",
-          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DiscountManagement.Configuration.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DiscountManagement.Configuration.dll": {}
-        }
-      },
       "DiscountManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3123,6 +3181,21 @@
         },
         "runtime": {
           "bin/placeholder/DiscountManagement.Domain.dll": {}
+        }
+      },
+      "DiscountManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManagement.Application": "1.0.0",
+          "DiscountManagement.Infrastructure.EFCore": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManagement.Infrastructure.Configuration.dll": {}
         }
       },
       "DiscountManagement.Infrastructure.EFCore/1.0.0": {
@@ -3246,23 +3319,6 @@
           "bin/placeholder/ShopManagement.Application.Contract.dll": {}
         }
       },
-      "ShopManagement.Configuration/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "01_LampshadeQuery": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "ShopManagement.Application": "1.0.0",
-          "ShopManagement.Domain": "1.0.0",
-          "ShopManagement.Infrastructure.EfCore": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ShopManagement.Configuration.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ShopManagement.Configuration.dll": {}
-        }
-      },
       "ShopManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3275,6 +3331,23 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Domain.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.Configuration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "ShopManagement.Application": "1.0.0",
+          "ShopManagement.Domain": "1.0.0",
+          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Infrastructure.Configuration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Infrastructure.Configuration.dll": {}
         }
       },
       "ShopManagement.Infrastructure.EfCore/1.0.0": {
@@ -9703,6 +9776,31 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "BlogManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application/BlogManagement.Application.csproj",
+      "msbuildProject": "../BlogManagement.Application/BlogManagement.Application.csproj"
+    },
+    "BlogManagement.Application.Contract/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Application.Contract/BlogManagement.Application.Contract.csproj",
+      "msbuildProject": "../BlogManagement.Application.Contract/BlogManagement.Application.Contract.csproj"
+    },
+    "BlogManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Domain/BlogManagement.Domain.csproj",
+      "msbuildProject": "../BlogManagement.Domain/BlogManagement.Domain.csproj"
+    },
+    "BlogManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.Configuration/BlogManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.Configuration/BlogManagement.Infrastructure.Configuration.csproj"
+    },
+    "BlogManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../BlogManagement.Infrastructure.EFCore/BlogManagement.Infrastructure.EFCore.csproj"
+    },
     "DiscountManagement.Application/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Application/DiscountManagement.Application.csproj",
@@ -9713,15 +9811,15 @@
       "path": "../CustomerDiscount.Application.Contract/DiscountManagement.Application.Contract.csproj",
       "msbuildProject": "../CustomerDiscount.Application.Contract/DiscountManagement.Application.Contract.csproj"
     },
-    "DiscountManagement.Configuration/1.0.0": {
-      "type": "project",
-      "path": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj",
-      "msbuildProject": "../DiscountManagement.Configuration/DiscountManagement.Configuration.csproj"
-    },
     "DiscountManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj",
       "msbuildProject": "../DiscountManagement.Domain/DiscountManagement.Domain.csproj"
+    },
+    "DiscountManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManagement.Configuration/DiscountManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../DiscountManagement.Configuration/DiscountManagement.Infrastructure.Configuration.csproj"
     },
     "DiscountManagement.Infrastructure.EFCore/1.0.0": {
       "type": "project",
@@ -9763,15 +9861,15 @@
       "path": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj",
       "msbuildProject": "../ShopManagement.Application.Contract/ShopManagement.Application.Contract.csproj"
     },
-    "ShopManagement.Configuration/1.0.0": {
-      "type": "project",
-      "path": "../ShopManagement.Configuraion/ShopManagement.Configuration.csproj",
-      "msbuildProject": "../ShopManagement.Configuraion/ShopManagement.Configuration.csproj"
-    },
     "ShopManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Domain/ShopManagement.Domain.csproj",
       "msbuildProject": "../ShopManagement.Domain/ShopManagement.Domain.csproj"
+    },
+    "ShopManagement.Infrastructure.Configuration/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Configuraion/ShopManagement.Infrastructure.Configuration.csproj",
+      "msbuildProject": "../ShopManagement.Configuraion/ShopManagement.Infrastructure.Configuration.csproj"
     },
     "ShopManagement.Infrastructure.EfCore/1.0.0": {
       "type": "project",
@@ -9781,11 +9879,12 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DiscountManagement.Configuration >= 1.0.0",
+      "BlogManagement.Infrastructure.Configuration >= 1.0.0",
+      "DiscountManagement.Infrastructure.Configuration >= 1.0.0",
       "InventoryManagement.Infrastructure.Configuration >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
-      "ShopManagement.Configuration >= 1.0.0"
+      "ShopManagement.Infrastructure.Configuration >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9815,14 +9914,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Configuration.csproj"
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+            },
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj"
             },
             "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
               "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj"
+            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj"
             }
           }
         }

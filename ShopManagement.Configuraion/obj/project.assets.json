@@ -2077,9 +2077,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
-      "projectName": "ShopManagement.Configuration",
-      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
+      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
+      "projectName": "ShopManagement.Infrastructure.Configuration",
+      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
       "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\obj\\",
       "projectStyle": "PackageReference",

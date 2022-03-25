@@ -19,7 +19,7 @@ using ShopManagement.Domain.SlideAgg;
 using ShopManagement.Infrastructure.EfCore;
 using ShopManagement.Infrastructure.EfCore.Repository;
 
-namespace ShopManagement.Configuration {
+namespace ShopManagement.Infrastructure.Configuration {
     public class ShopManagementBootstrapper {
 
         public static void Configure (IServiceCollection services, string connectionString) {

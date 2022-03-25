@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FVxgy66Xw9ht9a/VyMwqTnJlNLUd2EooPxjPFKBZe+zl9PFRUu7uLJpsvJr+ALzXknWd9mXqkGn87rAWXFE1gw==",
+  "dgSpecHash": "Fg75snf65E7M/x1uV6MUpBsZ7eJ9fVRJ0FsCOTHiN/KEnK12gBKkvsjxAsEeiiLAD/M8qEiGDjJeVoy4n1rupg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Configuration.csproj",
+  "projectFilePath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.15\\microsoft.aspnetcore.http.features.5.0.15.nupkg.sha512",
     "C:\\Users\\Amiri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

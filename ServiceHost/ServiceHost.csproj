@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Configuration.csproj" />
+    <ProjectReference Include="..\BlogManagement.Infrastructure.Configuration\BlogManagement.Infrastructure.Configuration.csproj" />
+    <ProjectReference Include="..\DiscountManagement.Configuration\DiscountManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\InventoryManagement.Infrastructure.Configuration\InventoryManagement.Infrastructure.Configuration.csproj" />
-    <ProjectReference Include="..\ShopManagement.Configuraion\ShopManagement.Configuration.csproj" />
+    <ProjectReference Include="..\ShopManagement.Configuraion\ShopManagement.Infrastructure.Configuration.csproj" />
   </ItemGroup>
 
   <ItemGroup>
