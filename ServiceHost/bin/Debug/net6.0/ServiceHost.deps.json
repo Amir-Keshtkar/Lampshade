@@ -2211,6 +2211,7 @@
       },
       "01_LampshadeQuery/1.0.0": {
         "dependencies": {
+          "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryManagement.Infrastructure.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EfCore": "1.0.0"
@@ -2239,8 +2240,7 @@
       },
       "BlogManagement.Application.Contract/1.0.0": {
         "dependencies": {
-          "0_Framework": "1.0.0",
-          "Microsoft.AspNetCore.Http.Features": "5.0.15"
+          "0_Framework": "1.0.0"
         },
         "runtime": {
           "BlogManagement.Application.Contract.dll": {}
@@ -2257,6 +2257,7 @@
       },
       "BlogManagement.Infrastructure.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "BlogManagement.Application": "1.0.0",
           "BlogManagement.Application.Contract": "1.0.0",
           "BlogManagement.Infrastructure.EFCore": "1.0.0",

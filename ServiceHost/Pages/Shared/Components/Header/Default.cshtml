@@ -1,4 +1,5 @@
-﻿@{
+﻿@model _01_LampshadeQuery.MenuModel
+@{
 }
 
 <div class="header-area header-sticky">
@@ -19,36 +20,27 @@
                                 </li>
 
                                 <li class="menu-item-has-children">
-                                    <a href="blog-left-sidebar.html"> محصولات</a>
+                                    <a> محصولات</a>
                                     <ul class="sub-menu">
-                                        <li>
-                                            <a href="blog-left-sidebar.html">دکوری</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-right-sidebar.html">اتاق خواب</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-post-left-sidebar.html">نگهدارنده</a>
-                                        </li>
+                                        @foreach(var category in Model.ProductCategories) {
+                                            <li>
+                                                <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="blog-left-sidebar.html"> مقالات</a>
+                                    <a> مقالات</a>
                                     <ul class="sub-menu">
-                                        <li>
-                                            <a href="blog-left-sidebar.html">گروه 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-right-sidebar.html"> گروه 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-post-left-sidebar.html">گروه 3</a>
-                                        </li>
+                                        @foreach(var category in Model.ArticleCategories) {
+                                            <li>
+                                                <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                            </li>
+                                        }
                                     </ul>
                                 </li>
-
                                 <li>
-                                    <a href="contact.html">تماس با ما</a>
+                                    <a asp-page="./ContactUs">تماس با ما</a>
                                 </li>
                             </ul>
                         </nav>
@@ -249,13 +241,11 @@
     <a href="javascript:void(0)" class="offcanvas-menu-close" id="offcanvas-menu-close-trigger">
         <i class="ion-android-close"></i>
     </a>
-
     <div class="offcanvas-wrapper">
-
         <div class="offcanvas-inner-content">
             <div class="offcanvas-mobile-search-area">
-                <form action="#">
-                    <input type="search" placeholder="جستجو ...">
+                <form method="get" asp-page="./Search">
+                    <input type="search" id="value" name="value" placeholder="جستجو ...">
                     <button type="submit">
                         <i class="fa fa-search"></i>
                     </button>
@@ -267,31 +257,23 @@
                         <a asp-page="/Index">صفحه اصلی</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">محصولات</a>
+                        <a>محصولات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">دکوری</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html">اتاق خواب</a>
-                            </li>
-                            <li>
-                                <a href="blog-post-left-sidebar.html">نگهدارنده</a>
-                            </li>
+                            @foreach(var category in Model.ProductCategories) {
+                                <li>
+                                    <a asp-page="./ProductCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                </li>
+                            }
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">مقالات</a>
+                        <a>مقالات</a>
                         <ul class="sub-menu">
-                            <li>
-                                <a href="blog-left-sidebar.html">گروه 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-right-sidebar.html"> گروه 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post-left-sidebar.html">گروه 3</a>
-                            </li>
+                            @foreach(var category in Model.ArticleCategories) {
+                                <li>
+                                    <a asp-page="./ArticleCategory" asp-route-id="@category.Slug">@category.Name</a>
+                                </li>
+                            }
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
@@ -299,7 +281,6 @@
                     </li>
                 </ul>
             </nav>
-
             <div class="offcanvas-settings">
                 <nav class="offcanvas-navigation">
                     <ul>
@@ -334,7 +315,6 @@
                     </ul>
                 </nav>
             </div>
-
             <div class="offcanvas-widget-area">
                 <div class="off-canvas-contact-widget">
                     <div class="header-contact-info">
@@ -342,12 +322,12 @@
                             <li>
                                 <i class="ion-android-phone-portrait"></i>
                                 <a href="tel://09396387926">
-                                    9396387926 (+98) 
+                                    9396387926 (+98)
                                 </a>
                             </li>
                             <li>
                                 <i class="ion-android-mail"></i>
-                                <a href="mailto: amir78ahkl@gmail.com?subject=ShadyStore"   target="_blank">ارتباط با ما</a>
+                                <a href="mailto: amir78ahkl@gmail.com?subject=ShadyStore" target="_blank">ارتباط با ما</a>
                             </li>
                         </ul>
                     </div>

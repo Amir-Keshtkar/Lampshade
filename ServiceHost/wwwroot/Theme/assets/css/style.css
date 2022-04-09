@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+/* @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i'); */
+@import url('~/AdminTheme/assets/css/css.css');
 
 /*=============================================
 =            CSS Index            =
@@ -60,7 +61,7 @@ body {
 body {
     font-family: 'IranSans', sans-serif;
     font-size: 15px;
-    font-weight: 600;
+    /* font-weight: 600; */
     font-style: normal;
     line-height: 2.4;
     position: relative;
@@ -2182,6 +2183,7 @@ select {
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 20px;
+    color: rgb(146, 146, 146);
 }
 
 .widget-product-title-wrapper {
@@ -2359,10 +2361,10 @@ select {
     }
 
 .single-grid-product__price .main-price {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 15px;
-    color: #333;
+    color: #929292;;
 }
 
     .single-grid-product__price .main-price.discounted {
@@ -2370,7 +2372,7 @@ select {
     }
 
 .single-grid-product__price .discounted-price {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 15px;
     margin-right: 10px;
@@ -2729,6 +2731,7 @@ select {
     line-height: 18px;
     margin-top: 20px;
     margin-bottom: 15px;
+    /* font-weight: bold; */
 }
 
     .single-slider-post__content .title a:hover {
@@ -2748,8 +2751,11 @@ select {
     }
 
 .single-slider-post__content .short-desc {
-    line-height: 24px;
+    line-height: 19px;
     margin-bottom: 0;
+    font-size: small;
+    font-weight: 400;
+    color: rgb(146, 146, 146);
 }
 
 .single-slider-post__content .blog-post-link {
@@ -3246,6 +3252,8 @@ select {
 .breadcrumb-content__page-map li {
     line-height: 25px;
     display: inline-block;
+    font-size: medium;
+    font-weight: 500;
     color: #707070;
 }
 
@@ -3486,6 +3494,8 @@ select {
     position: relative;
     display: block;
     padding: 5px 0;
+    font-size: small;
+    font-weight: 500;
     color: #777;
 }
 
@@ -6188,6 +6198,9 @@ span.required {
 .single-blog-post__content .short-desc {
     line-height: 24px;
     margin-bottom: 0;
+    font-size: small;
+    font-weight: 400;
+    color: rgb(146, 146, 146);
 }
 
 .single-blog-post__content .blog-post-link {
@@ -6320,6 +6333,8 @@ span.required {
     }
 
         .blog-single-post-container .post-meta p span {
+            font-weight: 400;
+            font-size: small;
             color: #999;
         }
 
