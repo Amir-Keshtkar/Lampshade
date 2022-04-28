@@ -24,7 +24,7 @@ namespace AccountManagement.Infrastructure.EfCore.Repository {
 
         public List<AccountViewModel> Search (AccountSearchModel searchModel) {
             var query = _accountContext.Accounts
-                .Include(x=>x.Role)
+                .Include(x => x.Role)
                 .Select(x => new AccountViewModel {
                     Id = x.Id,
                     FullName = x.FullName,
@@ -48,6 +48,10 @@ namespace AccountManagement.Infrastructure.EfCore.Repository {
                 query = query.Where(x => x.RoleId == searchModel.RoleId);
             }
             return query.OrderByDescending(x => x.Id).ToList();
+        }
+
+        public Account GetByUsername (string username) {
+            return _accountContext.Accounts.FirstOrDefault(x => x.UserName == username)!;
         }
     }
 }

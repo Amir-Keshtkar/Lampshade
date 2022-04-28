@@ -1,4 +1,6 @@
-﻿@model _01_LampshadeQuery.MenuModel
+﻿@using _0_Framework.Application
+@model _01_LampshadeQuery.MenuModel
+@inject IAuthHelper authHelper
 @{
 }
 
@@ -42,6 +44,15 @@
                                 <li>
                                     <a asp-page="./ContactUs">تماس با ما</a>
                                 </li>
+                                @if(authHelper.IsLoggedIn()) {
+                                    <li>
+                                        <a asp-page="./Account" asp-page-handler="Logout"> خروج</a>
+                                    </li>
+                                } else {
+                                    <li>
+                                        <a asp-page="./Account">ورود </a>
+                                    </li>
+                                }
                             </ul>
                         </nav>
                     </div>
@@ -159,10 +170,10 @@
                                             <h4 class="title">پروفایل من </h4>
                                             <ul>
                                                 <li>
-                                                    <a  asp-page="./Account">ثبت نام</a>
+                                                    <a asp-page="./Account">ثبت نام</a>
                                                 </li>
                                                 <li>
-                                                    <a  asp-page="./Account">ورود</a>
+                                                    <a asp-page="./Account">ورود</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -291,7 +302,7 @@
                                     <a asp-page="./Account">ثبت نام</a>
                                 </li>
                                 <li>
-                                    <a  asp-page="./Account">ورود</a>
+                                    <a asp-page="./Account">ورود</a>
                                 </li>
                             </ul>
                         </li>

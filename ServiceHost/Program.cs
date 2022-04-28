@@ -6,12 +6,14 @@ using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
 using DiscountManagement.Infrastructure.Configuration;
 using InventoryManagement.Infrastructure.Configuration;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using ShopManagement.Infrastructure.Configuration;
 using ServiceHost;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Create services to the container.
+builder.Services.AddHttpContextAccessor();
 var connectionString = builder.Configuration.GetConnectionString("LampShadeDb");
 ShopManagementBootstrapper.Configure(builder.Services, connectionString);
 DiscountManagementBootstrapper.Configure(builder.Services, connectionString);
@@ -24,6 +26,19 @@ builder.Services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, Unico
 
 builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddTransient<IFileUploader, FileUploader>();
+builder.Services.AddTransient<IAuthHelper, AuthHelper>();
+
+builder.Services.Configure<CookiePolicyOptions>(options => {
+    options.CheckConsentNeeded = context => true;
+    options.MinimumSameSitePolicy = SameSiteMode.Lax;
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o => {
+        o.LoginPath = new PathString("/Account");
+        o.LogoutPath = new PathString("/Account");
+        o.AccessDeniedPath = new PathString("/AccessDenied");
+    });
 
 builder.Services.AddRazorPages();
 
@@ -36,8 +51,12 @@ if(!app.Environment.IsDevelopment()) {
     app.UseHsts();
 }
 
+app.UseAuthentication();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseCookiePolicy();
 
 app.UseRouting();
 

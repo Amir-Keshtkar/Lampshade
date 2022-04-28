@@ -1,4 +1,5 @@
-﻿using _0_Framework.Application;
+﻿using System.Security.Cryptography.X509Certificates;
+using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
 using Microsoft.AspNetCore.Http;
@@ -8,11 +9,13 @@ namespace AccountManagement.Application {
         private readonly IAccountRepository _accountRepository;
         private readonly IFileUploader _fileUploader;
         private readonly IPasswordHasher _passwordHasher;
+        private readonly IAuthHelper _authHelper;
 
-        public AccountApplication (IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher) {
+        public AccountApplication (IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper) {
             _accountRepository = accountRepository;
             _fileUploader = fileUploader;
             _passwordHasher = passwordHasher;
+            _authHelper = authHelper;
         }
 
         public OperationResult Create (CreateAccount command) {
@@ -36,7 +39,7 @@ namespace AccountManagement.Application {
             if(account == null) {
                 return operation.Failed(ApplicationMessages.RecordNotFound);
             }
-            if(_accountRepository.Exists(x => (x.UserName == command.UserName || x.Mobile==command.Mobile) && x.Id != command.Id)) {
+            if(_accountRepository.Exists(x => (x.UserName == command.UserName || x.Mobile == command.Mobile) && x.Id != command.Id)) {
                 return operation.Failed(ApplicationMessages.DuplicatedMessage);
             }
             var path = "ProfilePictures";
@@ -65,12 +68,37 @@ namespace AccountManagement.Application {
             return operation.Succeeded();
         }
 
+        public OperationResult Login (Login command) {
+            var operation = new OperationResult();
+            var account = _accountRepository.GetByUsername(command.Username);
+            if(account == null) {
+                return operation.Failed(ApplicationMessages.WrongUserPass);
+            }
+
+            (bool Verified, bool NeedsUpgrade) result = _passwordHasher.Check(command.Password, account.Password);
+            if(result.Verified) {
+                return operation.Failed(ApplicationMessages.PasswordWrong);
+            }
+
+            _authHelper.SignIn(new AuthViewModel {
+                Id = account.Id,
+                RoleId = account.RoleId,
+                FullName = account.FullName,
+                Username = account.UserName
+            });
+            return operation.Succeeded();
+        }
+
         public EditAccount GetDetails (long id) {
             return _accountRepository.GetDetails(id);
         }
 
         public List<AccountViewModel> Search (AccountSearchModel searchModel) {
             return _accountRepository.Search(searchModel);
+        }
+
+        public void Logout() {
+            _authHelper.SignOut();
         }
     }
 }
