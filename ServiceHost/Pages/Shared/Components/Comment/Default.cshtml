@@ -1,0 +1,28 @@
+﻿@model List<_01_LampshadeQuery.Contract.Comment.CommentQueryModel>
+@{
+}
+@foreach(var comment in Model) {
+    <div class="single-comment reply-comment">
+        <span class="reply-btn">
+            <a href="#postComment" onclick='$("#commentParentId").val(@comment.Id)'>پاسخ</a>
+        </span>
+        <div class="image">
+            <img src="~/Theme/assets/img/blog/comment-icon.png" alt="">
+        </div>
+        <div class="content">
+            <h3 class="user">
+                @comment.Name
+                <span class="comment-time">
+                    @comment.CreationDate
+                </span>
+            </h3>
+            <p class="comment-text">
+                @comment.Message
+            </p>
+        </div>
+    </div>
+    @if(comment.Children.Count > 0) {
+        @await Component.InvokeAsync("Comment", comment.Children)
+    }
+
+}

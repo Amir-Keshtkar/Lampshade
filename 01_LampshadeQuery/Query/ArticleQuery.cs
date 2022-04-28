@@ -1,15 +1,21 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using _0_Framework.Application;
 using _01_LampshadeQuery.Contract.Article;
+using _01_LampshadeQuery.Contract.Comment;
 using BlogManagement.Infrastructure.EFCore;
+using CommentManagement.Domain.CommentAgg;
+using CommentManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace _01_LampshadeQuery.Query {
     public class ArticleQuery: IArticleQuery {
         private readonly BlogContext _blogContext;
+        private readonly CommentContext _commentContext;
 
-        public ArticleQuery (BlogContext blogContext) {
+        public ArticleQuery (BlogContext blogContext, CommentContext commentContext) {
             _blogContext = blogContext;
+            _commentContext = commentContext;
         }
 
         public List<ArticleQueryModel> GetLatestArticles () {
@@ -31,6 +37,7 @@ namespace _01_LampshadeQuery.Query {
             var article = _blogContext.Articles
                 .Include(x => x.Category)
                 .Select(x => new ArticleQueryModel {
+                    Id = x.Id,
                     Title = x.Title,
                     ShortDescription = x.ShortDescription,
                     Description = x.Description,
@@ -48,7 +55,39 @@ namespace _01_LampshadeQuery.Query {
             if(!string.IsNullOrWhiteSpace(article.Keywords)) {
                 article.KeywordList = article.Keywords.Split(new char[] { ',', '،', '.' }).ToList();
             }
+
+            var comments = _commentContext.Comments
+               .Where(x => !x.IsCanceled && x.IsConfirmed)
+               .Where(x => x.Type == CommentTypes.Article)
+               .Where(x => x.RecordOwnerId == article.Id)
+               .Include(x => x.Parent)
+               .Include(x => x.Children)
+               .Select(x => new CommentQueryModel {
+                   Id = x.Id,
+                   Message = x.Message,
+                   Name = x.Name,
+                   CreationDate = x.CreationDate.ToFarsi(),
+                   ParentId = x.ParentId,
+                   // ParentName = x.Parent.Name,
+                   Children = MapComments(x.Children)
+               }).OrderByDescending(x => x.Id).ToList();
+            article.Comments = comments;
             return article;
+        }
+
+        private static List<CommentQueryModel> MapComments (List<Comment> children) {
+            if(children == null || children.Count < 1) {
+                return new List<CommentQueryModel>();
+            }
+            return children.Select(x => new CommentQueryModel {
+                Name = x.Name,
+                Message = x.Message,
+                Id = x.Id,
+                CreationDate = x.CreationDate.ToFarsi(),
+                ParentId = x.ParentId,
+                //ParentName = x.Parent.Name,
+                Children = MapComments(x.Children)
+            }).ToList();
         }
     }
 }

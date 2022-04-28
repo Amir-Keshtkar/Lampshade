@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فروشگاه شیدی | @ViewData["Title"]</title>
+    @if(ViewData["Title"] != null) {
+        <title>فروشگاه شیدی | @ViewData["Title"]</title>
+    } else {
+        <title>فروشگاه شیدی </title>
+    }
 
     <meta name="keywords" content="@ViewData["keywords"]" />
     <meta name="description" content="@ViewData["metaDescription"]" />

@@ -1,5 +1,8 @@
-﻿namespace _01_LampshadeQuery.Contract.Article {
+﻿using _01_LampshadeQuery.Contract.Comment;
+
+namespace _01_LampshadeQuery.Contract.Article {
     public class ArticleQueryModel {
+        public long Id { get; set; }
         public string Title { get; set; }
         public string ShortDescription { get; set; }
         public string Description { get; set; }
@@ -15,5 +18,6 @@
         public string CategoryName { get; set; }
         public string CategorySlug { get; set; }
         public List<string> KeywordList { get; set; }
+        public List<CommentQueryModel> Comments { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using _0_Framework.Domain;
 using BlogManagement.Domain.ArticleCategoryAgg;
+using CommentManagement.Domain.CommentAgg;
 
 namespace BlogManagement.Domain.ArticleAgg {
     public class Article: EntityBase {

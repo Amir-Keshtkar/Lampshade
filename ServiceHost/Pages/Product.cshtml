@@ -2,6 +2,8 @@
 @model ServiceHost.Pages.ProductModel
 @{
     ViewData["Title"] = Model.product.Name;
+    ViewData["keywords"] = Model.product.Keywords;
+    ViewData["metaDescription"] = Model.product.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -40,23 +42,23 @@
                                         <div class="big-image-wrapper">
                                             <div class="product-details-big-image-slider-wrapper product-details-big-image-slider-wrapper--bottom-space ht-slick-slider"
                                                  data-slick-setting='{
-                                                    "slidesToShow": 1,
-                                                    "slidesToScroll": 1,
-                                                    "arrows": false,
-                                                    "autoplay": false,
-                                                    "autoplaySpeed": 5000,
-                                                    "fade": true,
-                                                    "speed": 500,
-                                                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
-                                                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
-                                                }' data-slick-responsive='[
-                                                    {"breakpoint":1501, "settings": {"slidesToShow": 1, "arrows": false} },
-                                                    {"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": false} },
-                                                    {"breakpoint":991, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                                                    {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                                                    {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                                                    {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
-                                                ]'>
+                                                        "slidesToShow": 1,
+                                                        "slidesToScroll": 1,
+                                                        "arrows": false,
+                                                        "autoplay": false,
+                                                        "autoplaySpeed": 5000,
+                                                        "fade": true,
+                                                        "speed": 500,
+                                                        "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
+                                                        "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
+                                                    }' data-slick-responsive='[
+                                                        {"breakpoint":1501, "settings": {"slidesToShow": 1, "arrows": false} },
+                                                        {"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": false} },
+                                                        {"breakpoint":991, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                                                        {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                                                        {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
+                                                        {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
+                                                    ]'>
                                                 <div class="single-image">
                                                     <img src="~/UploadedPictures/@Model.product.Picture" class="img-fluid"
                                                          alt="@Model.product.PictureAlt" title="@Model.product.PictureTitle">
@@ -70,25 +72,25 @@
                                         </div>
                                         <div class="product-details-small-image-slider-wrapper product-details-small-image-slider-wrapper--horizontal-space ht-slick-slider"
                                              data-slick-setting='{
-                                                "slidesToShow": 4,
-                                                "slidesToScroll": 1,
-                                                "arrows": true,
-                                                "autoplay": false,
-                                                "autoplaySpeed": 5000,
-                                                "speed": 500,
-                                                "asNavFor": ".product-details-big-image-slider-wrapper",
-                                                "focusOnSelect": true,
-                                                "centerMode": false,
-                                                "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
-                                                "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
-                                            }' data-slick-responsive='[
-                                                {"breakpoint":1501, "settings": {"slidesToShow": 3, "arrows": false} },
-                                                {"breakpoint":1199, "settings": {"slidesToShow": 3, "arrows": false} },
-                                                {"breakpoint":991, "settings": {"slidesToShow": 5, "arrows": false, "slidesToScroll": 1} },
-                                                {"breakpoint":767, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
-                                                {"breakpoint":575, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
-                                                {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
-                                            ]'>
+                                                    "slidesToShow": 4,
+                                                    "slidesToScroll": 1,
+                                                    "arrows": true,
+                                                    "autoplay": false,
+                                                    "autoplaySpeed": 5000,
+                                                    "speed": 500,
+                                                    "asNavFor": ".product-details-big-image-slider-wrapper",
+                                                    "focusOnSelect": true,
+                                                    "centerMode": false,
+                                                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
+                                                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
+                                                }' data-slick-responsive='[
+                                                    {"breakpoint":1501, "settings": {"slidesToShow": 3, "arrows": false} },
+                                                    {"breakpoint":1199, "settings": {"slidesToShow": 3, "arrows": false} },
+                                                    {"breakpoint":991, "settings": {"slidesToShow": 5, "arrows": false, "slidesToScroll": 1} },
+                                                    {"breakpoint":767, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
+                                                    {"breakpoint":575, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
+                                                    {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
+                                                ]'>
                                             <div class="single-image">
                                                 <img src="~/UploadedPictures/@Model.product.Picture" class="img-fluid"
                                                      alt="@Model.product.PictureAlt" title="@Model.product.PictureTitle">
@@ -106,7 +108,7 @@
                                         <p class="single-info">
                                             <a asp-page="/ProductCategory" asp-route-id="@Model.product.CategorySlug">@Model.product.Category</a>
                                         </p>
-                                        <h4 class="product-title">@Model.product.Name</h4>
+                                        <h2 class="product-title">@Model.product.Name</h2>
                                         <div class="product-rating">
                                             <span class="rating">
                                                 <i class="ion-android-star active"></i>
@@ -203,7 +205,8 @@
                                                  role="tabpanel" aria-labelledby="description-tab">
                                                 <div class="product-description">
                                                     <p>
-                                                    @Model.product.Description</p>
+                                                        @Model.product.Description
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="review" role="tabpanel"
@@ -303,7 +306,7 @@
                                                                     <textarea name="Message" id="your-review"
                                                                               placeholder="نظر خود را بنویسید"></textarea>
                                                                 </div>
-                                                                <input type="hidden" name="productId" value="@Model.product.Id" />
+                                                                <input type="hidden" name="RecordOwnerId" value="@Model.product.Id" />
                                                                 <input type="hidden" name="ProductSlug" value="@Model.product.Slug" />
                                                                 <div class="col-12">
                                                                     <input value="ارسال" type="submit">

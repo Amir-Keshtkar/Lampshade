@@ -130,7 +130,57 @@
       "ProjectGuid": "41e133fe-f71f-424a-a0d1-f9aff07ce8e7",
       "DisplayName": "BlogManagement.Infrastructure.Configuration",
       "ColorIndex": 8
+    },
+    "cff9bdab-4b53-49ea-b815-3bef55921455": {
+      "ProjectGuid": "cff9bdab-4b53-49ea-b815-3bef55921455",
+      "DisplayName": "CommentManagement.Domain",
+      "ColorIndex": 9
+    },
+    "03164b85-fb28-4a3c-bf23-fd393960c54f": {
+      "ProjectGuid": "03164b85-fb28-4a3c-bf23-fd393960c54f",
+      "DisplayName": "CommentManagement.Application",
+      "ColorIndex": 10
+    },
+    "ba7025b3-80a1-4a8f-a2b9-fd6539d06399": {
+      "ProjectGuid": "ba7025b3-80a1-4a8f-a2b9-fd6539d06399",
+      "DisplayName": "CommentManagement.Application.Contract",
+      "ColorIndex": 11
+    },
+    "95876eed-1598-43b7-ac23-8634929aeab4": {
+      "ProjectGuid": "95876eed-1598-43b7-ac23-8634929aeab4",
+      "DisplayName": "CommentManagement.Infrastructure.Configuration",
+      "ColorIndex": 12
+    },
+    "d162653f-7635-4a61-b612-c3610c113950": {
+      "ProjectGuid": "d162653f-7635-4a61-b612-c3610c113950",
+      "DisplayName": "CommentManagement.Infrastructure.EFCore",
+      "ColorIndex": 13
+    },
+    "52ec00e2-2b89-460e-a8d9-8d83994033bc": {
+      "ProjectGuid": "52ec00e2-2b89-460e-a8d9-8d83994033bc",
+      "DisplayName": "AccountManagement.Application",
+      "ColorIndex": 14
+    },
+    "1600eab5-6704-4b67-9884-ea401053cb3a": {
+      "ProjectGuid": "1600eab5-6704-4b67-9884-ea401053cb3a",
+      "DisplayName": "AccountManagement.Domain",
+      "ColorIndex": 15
+    },
+    "9c72510f-2198-4df6-b458-5541249f7531": {
+      "ProjectGuid": "9c72510f-2198-4df6-b458-5541249f7531",
+      "DisplayName": "AccountManagement.Application.Contracts",
+      "ColorIndex": 0
+    },
+    "20b216d9-5004-4663-bcfe-b199b8da982a": {
+      "ProjectGuid": "20b216d9-5004-4663-bcfe-b199b8da982a",
+      "DisplayName": "AccountManagement.Infrastructure.EfCore",
+      "ColorIndex": 1
+    },
+    "60ff2b9d-3da4-4fe4-bb01-e4e42d52c4e8": {
+      "ProjectGuid": "60ff2b9d-3da4-4fe4-bb01-e4e42d52c4e8",
+      "DisplayName": "AccountManagement.Infrastructure.Configuration",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 3
 }

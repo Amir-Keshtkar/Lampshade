@@ -1,10 +1,10 @@
 ﻿using _0_Framework.Application;
+using _01_LampshadeQuery.Contract.Comment;
 using _01_LampshadeQuery.Contract.Product;
+using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastructure.EFCore;
 using InventoryManagement.Infrastructure.EFCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Domain.CommentAgg;
-using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EfCore;
 
@@ -13,11 +13,13 @@ namespace _01_LampshadeQuery.Query {
         private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
+        private readonly CommentContext _commentContext;
 
-        public ProductQuery (ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext) {
+        public ProductQuery (ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext) {
             _shopContext = shopContext;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
+            _commentContext = commentContext;
         }
 
         public List<ProductQueryModel> GetLatestArrivals () {
@@ -67,7 +69,6 @@ namespace _01_LampshadeQuery.Query {
             var product = _shopContext.Products
                 .Include(x => x.Category)
                 .Include(x => x.ProductPictures)
-                .Include(x => x.Comments)
                 .Select(x => new ProductQueryModel {
                     Id = x.Id,
                     Category = x.Category.Name,
@@ -83,7 +84,6 @@ namespace _01_LampshadeQuery.Query {
                     Code = x.Code,
                     CategorySlug = x.Category.Slug,
                     Pictures = MapProductPictures(x.ProductPictures),
-                    Comments = MapComments(x.Comments)
                 }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
             if(product == null) {
@@ -105,6 +105,18 @@ namespace _01_LampshadeQuery.Query {
                     product.PriceWithDiscount = (price - discountPrice).ToMoney();
                 }
             }
+
+            product.Comments = _commentContext.Comments
+               .Where(x => !x.IsCanceled && x.IsConfirmed)
+               .Where(x => x.Type == CommentTypes.Product)
+               .Where(x => x.RecordOwnerId == product.Id)
+               .Select(x => new CommentQueryModel {
+                   Id = x.Id,
+                   Message = x.Message,
+                   Name = x.Name,
+                   CreationDate = x.CreationDate.ToFarsi()
+               }).OrderByDescending(x => x.Id).ToList();
+
             return product;
         }
 
@@ -129,7 +141,7 @@ namespace _01_LampshadeQuery.Query {
                 }).AsNoTracking();
 
             if(!string.IsNullOrWhiteSpace(value)) {
-                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription.Contains(value));
+                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription!.Contains(value));
             }
             var products = query.OrderByDescending(x => x.Id).ToList();
             foreach(var product in products) {
@@ -162,15 +174,6 @@ namespace _01_LampshadeQuery.Query {
                 ProductId = x.ProductId,
                 IsRemoved = x.IsRemoved
             }).Where(x => !x.IsRemoved).ToList();
-        }
-
-        private static List<CommentQueryModel> MapComments (List<Comment> comments) {
-            return comments.Where(x => !x.IsCanceled && x.IsConfirmed)
-                .Select(x => new CommentQueryModel {
-                    Id = x.Id,
-                    Message = x.Message,
-                    Name = x.Name
-                }).OrderByDescending(x=>x.Id).ToList();
         }
     }
 }

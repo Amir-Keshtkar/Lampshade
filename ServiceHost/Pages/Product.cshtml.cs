@@ -1,7 +1,8 @@
 using _01_LampshadeQuery.Contract.Product;
+using CommentManagement.Application.Contract.Comment;
+using CommentManagement.Infrastructure.EFCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ShopManagement.Application.Contract.Comment;
 
 namespace ServiceHost.Pages {
     public class ProductModel: PageModel {
@@ -19,6 +20,7 @@ namespace ServiceHost.Pages {
         }
 
         public RedirectToPageResult OnPost(AddComment command, string productSlug) {
+            command.Type = CommentTypes.Product;
             var result=_commentApplication.Add(command);
             return RedirectToPage("/Product", new{Id=productSlug});
         }

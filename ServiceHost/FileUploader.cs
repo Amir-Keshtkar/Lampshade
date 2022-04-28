@@ -1,4 +1,5 @@
-﻿using _0_Framework.Application;
+﻿using System.Text.RegularExpressions;
+using _0_Framework.Application;
 using Microsoft.AspNetCore.Http;
 
 namespace ServiceHost {
@@ -9,7 +10,7 @@ namespace ServiceHost {
             _environment = environment;
         }
 
-        public string Upload(IFormFile file, string path) {
+        public string Upload (IFormFile file, string path) {
             if(file == null) {
                 return "";
             }
@@ -18,15 +19,16 @@ namespace ServiceHost {
                 Directory.CreateDirectory(directoryPath);
             }
 
-            var fileName = $"{DateTime.Now.ToFileName()}-{file.FileName}";
+            var fileName = $"{DateTime.Now.ToFileName()}-{Regex.Replace(file.FileName, @"[#]", string.Empty)}";
+
             var filePath = $"{directoryPath}//{fileName}";
-            
+
             _ = Uploader(file, filePath);
 
             return $"{path}/{fileName}";
         }
 
-        private static async Task Uploader(IFormFile file ,string filePath) {
+        private static async Task Uploader (IFormFile file, string filePath) {
             await using var output = File.Create(filePath);
             await file.CopyToAsync(output);
             // await using var fileStream = new FileStream(filePath, FileMode.Create);

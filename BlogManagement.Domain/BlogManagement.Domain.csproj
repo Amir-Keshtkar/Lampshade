@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
     <ProjectReference Include="..\BlogManagement.Application.Contract\BlogManagement.Application.Contract.csproj" />
+    <ProjectReference Include="..\CommentManagement.Domain\CommentManagement.Domain.csproj" />
   </ItemGroup>
 
 </Project>
