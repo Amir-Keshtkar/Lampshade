@@ -1,8 +1,9 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Linq.Expressions;
 using _0_Framework.Application;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Domain.AccountAgg;
-using Microsoft.AspNetCore.Http;
+using AccountManagement.Domain.RoleAgg;
+using Newtonsoft.Json;
 
 namespace AccountManagement.Application {
     public class AccountApplication: IAccountApplication {
@@ -10,16 +11,21 @@ namespace AccountManagement.Application {
         private readonly IFileUploader _fileUploader;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IAuthHelper _authHelper;
+        private readonly IRoleRepository _roleRepository;
 
-        public AccountApplication (IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper) {
+        public AccountApplication (IAccountRepository accountRepository, IFileUploader fileUploader, IPasswordHasher passwordHasher, IAuthHelper authHelper, IRoleRepository roleRepository) {
             _accountRepository = accountRepository;
             _fileUploader = fileUploader;
             _passwordHasher = passwordHasher;
             _authHelper = authHelper;
+            _roleRepository = roleRepository;
         }
 
-        public OperationResult Create (CreateAccount command) {
+        public OperationResult Register (RegisterAccount command) {
             var operation = new OperationResult();
+            if(command.Password != command.RePassword) {
+                return operation.Failed(ApplicationMessages.PasswordsNotMatch);
+            }
             if(_accountRepository.Exists(x => x.UserName == command.UserName || x.Mobile == command.Mobile)) {
                 return operation.Failed(ApplicationMessages.DuplicatedMessage);
             }
@@ -75,17 +81,18 @@ namespace AccountManagement.Application {
                 return operation.Failed(ApplicationMessages.WrongUserPass);
             }
 
-            (bool Verified, bool NeedsUpgrade) result = _passwordHasher.Check(command.Password, account.Password);
-            if(result.Verified) {
+            var result = _passwordHasher.Check(account.Password, command.Password);
+            if(!result.Verified) {
                 return operation.Failed(ApplicationMessages.PasswordWrong);
             }
 
-            _authHelper.SignIn(new AuthViewModel {
-                Id = account.Id,
-                RoleId = account.RoleId,
-                FullName = account.FullName,
-                Username = account.UserName
-            });
+            var permissions = _roleRepository.GetById(account.RoleId).Permissions
+                .Select(x => x.Code).ToList();
+
+            var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Role.Name,
+                account.FullName, account.UserName, permissions);
+            _authHelper.SignIn(authViewModel);
+
             return operation.Succeeded();
         }
 
@@ -97,7 +104,7 @@ namespace AccountManagement.Application {
             return _accountRepository.Search(searchModel);
         }
 
-        public void Logout() {
+        public void Logout () {
             _authHelper.SignOut();
         }
     }

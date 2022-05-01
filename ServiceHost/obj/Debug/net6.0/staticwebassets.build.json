@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f2SwScjgAvUFaN1+oZ61yvEqU65i74T1xd/8A4EyXAQ=",
+  "Hash": "VDHFAVSgcxzkFLVia4cVNZPtlYAK4vP8PvwgRB2nxHk=",
   "Source": "ServiceHost",
   "BasePath": "_content/ServiceHost",
   "Mode": "Default",
@@ -8668,6 +8668,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadedPictures\\ProfilePictures\\2022-04-28-18-00-23-Wide Wallpaper 27 - p30download.com-019.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\UploadedPictures\\ProfilePictures\\2022-04-30-09-01-36-wp1828974-programmer-wallpapers.png",
+      "SourceId": "ServiceHost",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\",
+      "BasePath": "_content/ServiceHost",
+      "RelativePath": "UploadedPictures/ProfilePictures/2022-04-30-09-01-36-wp1828974-programmer-wallpapers.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedPictures\\ProfilePictures\\2022-04-30-09-01-36-wp1828974-programmer-wallpapers.png"
     },
     {
       "Identity": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\wwwroot\\UploadedPictures\\Slides\\2022-03-22-02-41-42-2020-08-10-17-23-52-slider2.jpg",

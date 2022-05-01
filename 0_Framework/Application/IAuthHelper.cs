@@ -2,6 +2,9 @@
     public interface IAuthHelper {
         void SignIn(AuthViewModel command);
         void SignOut();
-        bool IsLoggedIn();
+        bool IsAuthenticated();
+        string CurrentAccountRole();
+        AuthViewModel CurrentAccountInfo();
+        List<int> GetPermissions();
     }
 }

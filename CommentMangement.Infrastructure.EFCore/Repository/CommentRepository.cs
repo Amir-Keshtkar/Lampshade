@@ -2,6 +2,7 @@
 using _0_Framework.Infrastructure;
 using CommentManagement.Application.Contract.Comment;
 using CommentManagement.Domain.CommentAgg;
+using Microsoft.EntityFrameworkCore;
 
 namespace CommentManagement.Infrastructure.EFCore.Repository {
     public class CommentRepository: RepositoryBase<long, Comment>, ICommentRepository {
@@ -32,7 +33,6 @@ namespace CommentManagement.Infrastructure.EFCore.Repository {
             if(!string.IsNullOrWhiteSpace(command.Name)) {
                 query = query.Where(x => x.Name.Contains(command.Name));
             }
-
             return query.OrderByDescending(x => x.Id).ToList();
         }
     }

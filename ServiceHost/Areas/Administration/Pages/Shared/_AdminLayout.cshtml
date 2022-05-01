@@ -34,7 +34,7 @@
     <!-- Custom Files -->
     <link href="~/AdminTheme/assets/css/persian-datepicker.min.css" rel="stylesheet" />
 
-    @RenderSection("Css", false)
+    @await RenderSectionAsync("Css", false)
 
     <link href="~/AdminTheme/assets/css/helper.css" rel="stylesheet" type="text/css" />
     <link href="~/AdminTheme/assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -45,10 +45,7 @@
 
 <body class="fixed-left">
     <div id="wrapper">
-
-        <!-- Top Bar Start -->
         <div class="topbar">
-            <!-- LOGO -->
             <div class="topbar-left">
                 <div class="pull-left">
                     <button class="button-menu-mobile open-left">
@@ -58,10 +55,8 @@
                 </div>
                 <div class="text-center">
                     <a asp-page="/Index" class="logo"><i class="md md-terrain"></i> <span>شیدی </span></a>
-
                 </div>
             </div>
-            <!-- Button mobile view to collapse sidebar menu -->
             <div class="navbar navbar-default" role="navigation">
                 <div class="container">
                     <div class="">
@@ -71,7 +66,6 @@
                             </div>
                             <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
                         </form>
-
                         <ul class="nav navbar-nav navbar-left pull-left">
                             <li class="dropdown">
                                 <a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true">
@@ -91,7 +85,6 @@
                                 <ul class="dropdown-menu dropdown-menu-lg">
                                     <li class="text-center notifi-title">Notification</li>
                                     <li class="list-group">
-                                        <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
@@ -105,7 +98,6 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
@@ -119,7 +111,6 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <!-- list item-->
                                         <a href="javascript:void(0);" class="list-group-item">
                                             <div class="media">
                                                 <div class="pull-left">
@@ -136,7 +127,6 @@
                                                 </div>
                                             </div>
                                         </a>
-                                        <!-- last list item -->
                                         <a href="javascript:void(0);" class="list-group-item">
                                             <small>See all notifications</small>
                                         </a>
@@ -145,35 +135,21 @@
                             </li>
                         </ul>
                     </div>
-                    <!--/.nav-collapse -->
                 </div>
             </div>
         </div>
-        <!-- Top Bar End -->
         <partial name="_Menu" />
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
         <div class="content-page">
-            <!-- Start content -->
             <div class="content">
                 <div class="container">
-
                     @RenderBody();
-
-                    <!-- Pls Remove -->
                     <div style="height: 600px;"></div>
-
-                </div> <!-- container -->
-
-            </div> <!-- content -->
-
+                </div>
+            </div>
             <footer class="footer text-right">
                 2015 © Moltran.
             </footer>
-
         </div>
-        <!-- ============================================================== -->
-        <!-- End Right content here -->
     </div>
 
     <div id="MainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -225,7 +201,7 @@
     <script src="~/AdminTheme/assets/js/persian-date.min.js"></script>
     <script src="~/AdminTheme/assets/js/persian-datepicker.min.js"></script>
 
-    @RenderSection("Scripts", false)
+    @await RenderSectionAsync("Scripts", false)
 
     <script type="text/javascript">
         $('.persianDateInput').persianDatepicker({

@@ -1,6 +1,7 @@
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using _0_Framework.Application;
+using _0_Framework.Infrastructure;
 using AccountManagement.Infrastructure.Configuration;
 using BlogManagement.Infrastructure.Configuration;
 using CommentManagement.Infrastructure.Configuration;
@@ -40,7 +41,41 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         o.AccessDeniedPath = new PathString("/AccessDenied");
     });
 
-builder.Services.AddRazorPages();
+builder.Services.AddAuthorization(options => {
+    options.AddPolicy("AdminArea", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
+
+    options.AddPolicy("Shop", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator }));
+
+    options.AddPolicy("Discount", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator }));
+
+    options.AddPolicy("Inventory", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator }));
+
+    options.AddPolicy("Account", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator }));
+
+    options.AddPolicy("Blog", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
+
+    options.AddPolicy("Comments", policyBuilder =>
+        policyBuilder.RequireRole(new List<string> { Roles.Administrator, Roles.ContentUploader }));
+});
+
+builder.Services.AddRazorPages()
+    .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
+    .AddRazorPagesOptions(options => {
+        options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Discounts", "Discount");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Inventory", "Inventory");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Accounts", "Account");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Blog", "Blog");
+        options.Conventions.AuthorizeAreaFolder("Administration", "/Comments", "Comments");
+
+    });
 
 var app = builder.Build();
 

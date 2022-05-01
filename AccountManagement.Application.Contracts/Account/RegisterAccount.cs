@@ -4,7 +4,7 @@ using AccountManagement.Application.Contracts.Role;
 using Microsoft.AspNetCore.Http;
 
 namespace AccountManagement.Application.Contracts.Account {
-    public class CreateAccount {
+    public class RegisterAccount {
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string FullName { get; set; }
 
@@ -14,6 +14,9 @@ namespace AccountManagement.Application.Contracts.Account {
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Password { get; set; }
         
+        [Required(ErrorMessage = ValidationMessages.IsRequired)]
+        public string RePassword { get; set; }
+
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Mobile { get; set; }
         

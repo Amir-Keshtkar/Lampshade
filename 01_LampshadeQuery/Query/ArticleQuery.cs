@@ -79,7 +79,8 @@ namespace _01_LampshadeQuery.Query {
             if(children == null || children.Count < 1) {
                 return new List<CommentQueryModel>();
             }
-            return children.Select(x => new CommentQueryModel {
+            return children.Where(x => !x.IsCanceled && x.IsConfirmed)
+                .Select(x => new CommentQueryModel {
                 Name = x.Name,
                 Message = x.Message,
                 Id = x.Id,
