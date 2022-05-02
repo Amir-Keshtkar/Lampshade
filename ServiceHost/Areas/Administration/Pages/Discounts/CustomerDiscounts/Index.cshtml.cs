@@ -1,4 +1,6 @@
+using _0_Framework.Infrastructure;
 using DiscountManagement.Application.Contract.CustomerDiscount;
+using DiscountManagement.Infrastructure.Configuration.Permissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -22,13 +24,13 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts {
             _productCategoryApplication = productCategoryApplication;
         }
 
+        [NeedsPermission(DiscountPermissions.ListCustomerDiscounts)]
         public void OnGet (CustomerDiscountSearchModel searchModel) {
             CustomerDiscounts = _customerDiscountApplication.Search(searchModel);
             Products = new SelectList(_productApplication.GetProducts(), "Id", "Name");
             ProductCategories = new SelectList(_productCategoryApplication.GetProductCategories(), "Id", "Name");
-            _productApplication.GetProducts().Select(x =>
-                x.Id == _productCategoryApplication.GetProductCategories().FirstOrDefault(y => y.Id == x.CategoryId)!
-                    .Id);
+            // _productApplication.GetProducts().Select(x =>
+            //     x.Id == _productCategoryApplication.GetProductCategories().FirstOrDefault(y => y.Id == x.CategoryId)!.Id);
         }
 
         public IActionResult OnGetCreate () {
@@ -38,7 +40,8 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts {
             };
             return Partial("./Create", command);
         }
-
+        
+        [NeedsPermission(DiscountPermissions.CreateCustomerDiscounts)]
         public JsonResult OnPostCreate (DefineCustomerDiscount command) {
             var result=_customerDiscountApplication.Define(command);
             return new JsonResult(result);
@@ -50,7 +53,8 @@ namespace ServiceHost.Areas.Administration.Pages.Discounts.CustomerDiscounts {
             discount.Categories = _productCategoryApplication.GetProductCategories();
             return Partial("./Edit", discount);
         }
-
+        
+        [NeedsPermission(DiscountPermissions.EditCustomerDiscounts)]
         public JsonResult OnPostEdit (EditCustomerDiscount command) {
             var result=_customerDiscountApplication.Edit(command);
             return new JsonResult(result);

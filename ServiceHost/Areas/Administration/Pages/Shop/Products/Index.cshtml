@@ -13,12 +13,12 @@
     <div class="col-sm-12">
         <h4 class="page-title pull-right">@ViewData["title"]</h4>
         <p class="pull-left">
-            <a class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد محصول جدید</a>
+            <a permission="@ShopPermissions.CreateProduct" class="btn btn-success btn-lg" href="#showmodal=@Url.Page("./Index", "Create")">ایجاد محصول جدید</a>
         </p>
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@ShopPermissions.SearchProducts">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<div class="row" id="ProductCategoriesDiv">
+<div class="row" permission="@ShopPermissions.ListProduct">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">

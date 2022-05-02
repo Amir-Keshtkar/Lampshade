@@ -1,4 +1,5 @@
 ﻿@page
+@using CommentManagement.Infrastructure.Configuration.Permissions
 @model ServiceHost.Areas.Administration.Pages.Comments.IndexModel
 @{
     Layout = "Shared/_AdminLayout";
@@ -11,7 +12,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@CommentPermissions.SearchComments">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -35,7 +36,7 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row" permission="@CommentPermissions.ListComments">
     <div class="col-md-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -75,15 +76,17 @@
                                         <td>@item.CreationDate</td>
                                         <td>
                                             @if(item.IsCanceled || (!item.IsConfirmed && !item.IsCanceled)) {
-                                                <a class="btn btn-success waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="Confirm" asp-route-id="@item.Id">
+                                                <a permission="@CommentPermissions.ConfirmComment" class="btn btn-success waves-effect waves-light m-b-5"
+                                                    asp-page="./Index" asp-page-handler="Confirm" asp-route-id="@item.Id">
                                                     تایید
                                                 </a>
-                                            } 
-                                            @if(item.IsConfirmed  || (!item.IsConfirmed && !item.IsCanceled)) {
-                                                <a class="btn btn-danger waves-effect waves-light m-b-5" asp-page="./Index" asp-page-handler="Cancel" asp-route-id="@item.Id">
+                                            }
+                                            @if(item.IsConfirmed || (!item.IsConfirmed && !item.IsCanceled)) {
+                                                <a permission="@CommentPermissions.ConfirmComment" class="btn btn-danger waves-effect waves-light m-b-5"
+                                                    asp-page="./Index" asp-page-handler="Cancel" asp-route-id="@item.Id">
                                                     رد
                                                 </a>
-                                            } 
+                                            }
                                         </td>
                                     </tr>
                                 }

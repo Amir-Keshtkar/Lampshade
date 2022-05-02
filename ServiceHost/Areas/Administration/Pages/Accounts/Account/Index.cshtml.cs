@@ -1,5 +1,7 @@
+using _0_Framework.Infrastructure;
 using AccountManagement.Application.Contracts.Account;
 using AccountManagement.Application.Contracts.Role;
+using AccountManagement.Infrastructure.Configuration.Permissions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -19,6 +21,7 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account {
             _roleApplication = roleApplication;
         }
 
+        [NeedsPermission(AccountPermissions.ListAccounts)]
         public void OnGet (AccountSearchModel searchModel) {
             Roles = new SelectList( _roleApplication.GetAll(), "Id", "Name");
             Accounts=_accountApplication.Search(searchModel);
@@ -30,7 +33,8 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account {
             };
             return Partial("./Create", account);
         }
-
+        
+        [NeedsPermission(AccountPermissions.CreateAccount)]
         public JsonResult OnPostCreate (RegisterAccount command) {
             var result=_accountApplication.Register(command);
             return new JsonResult(result);
@@ -41,17 +45,20 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Account {
             account.Roles = _roleApplication.GetAll();
             return Partial("./Edit", account);
         }
-
+        
+        [NeedsPermission(AccountPermissions.EditAccount)]
         public JsonResult OnPostEdit (EditAccount command) {
             var result=_accountApplication.Edit(command);
             return new JsonResult(result);
         }
-
+        
+        [NeedsPermission(AccountPermissions.ChangePassword)]
         public IActionResult OnGetChangePassword (long id) {
             var command = new ChangePassword(){Id = id};
             return Partial("./ChangePassword", command);
         }
-
+        
+        [NeedsPermission(AccountPermissions.ChangePassword)]
         public JsonResult OnPostChangePassword (ChangePassword command) {
             var result=_accountApplication.ChangePassword(command);
             return new JsonResult(result);

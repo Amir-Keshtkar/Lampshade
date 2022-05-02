@@ -18,16 +18,15 @@ namespace ServiceHost.Areas.Administration.Pages.Accounts.Role {
 
         public void OnGet (long id) {
             Command = _roleApplication.GetDetails(id);
-            foreach(var exposer in _exposers) {
-                var exposedPermissions = exposer.Expose();
+            foreach(var expose in _exposers) {
+                var exposedPermissions = expose.Expose();
                 foreach(var (key, value) in exposedPermissions) {
                     var group =new SelectListGroup() {
                         Name = key
                     };
                     foreach(var permission in value) {
-                        var item = new SelectListItem(permission.Name, permission.Code.ToString()) {
-                            Group = group
-                        };
+                        var item = new SelectListItem(permission.Name, permission.Code.ToString());
+                        item.Group = group;
                         if (Command.MappedPermissions!.Any(x=>x.Code==permission.Code)) {
                             item.Selected=true;
                         }
