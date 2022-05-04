@@ -104,7 +104,8 @@ namespace _01_LampshadeQuery.Query {
                     continue;
                 var price = inventoryPrice.UnitPrice;
                 product.Price = price.ToMoney();
-
+                product.DoublePrice = price;
+                
                 if(productDiscount == null)
                     continue;
                 var discountRate = productDiscount.DiscountRate;

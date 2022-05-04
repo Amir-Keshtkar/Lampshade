@@ -602,3 +602,7 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Acc
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\AccountManagement.Application.Contracts.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\AccountManagement.Domain.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\AccountManagement.Infrastructure.EfCore.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Nancy.dll

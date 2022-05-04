@@ -41,7 +41,7 @@ function updateCart() {
                             </a>
                             <div class="image">
                                 <a href="single-product.html">
-                                    <img src="/ProductPictures/${x.picture}"
+                                    <img src="/UploadedPictures/${x.picture}"
                                          class="img-fluid" alt="">
                                 </a>
                             </div>
@@ -50,7 +50,7 @@ function updateCart() {
                                     <a href="single-product.html">محصول: ${x.name}</a>
                                 </p>
                                 <p class="count">تعداد: ${x.count}</p>
-                                <p class="count">قیمت واحد: ${x.unitPrice}</p>
+                                <p class="count">قیمت واحد: ${Number(x.unitPrice).toLocaleString()}</p>
                             </div>
                         </div>`;
 
@@ -74,7 +74,7 @@ function changeCartItemCount(id, totalId, count) {
     products[productIndex].count = count;
     const product = products[productIndex];
     const newPrice = parseInt(product.unitPrice) * parseInt(count);
-    $(`#${totalId}`).text(newPrice);
+    $(`#${totalId}`).text(Number(newPrice).toLocaleString());
     //products[productIndex].totalPrice = newPrice;
     $.cookie(cookieName, JSON.stringify(products), { expires: 2, path: "/" });
     updateCart();

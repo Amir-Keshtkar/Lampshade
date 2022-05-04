@@ -89,7 +89,8 @@ namespace _0_Framework.Application {
         }
 
         public static string ToMoney (this double myMoney) {
-            return myMoney.ToString("N0", CultureInfo.CreateSpecificCulture("fa-ir"));
+            // return myMoney.ToString("N0", CultureInfo.CreateSpecificCulture("fa-ir"));
+            return myMoney.ToString("N0", CultureInfo.CreateSpecificCulture("en-us"));
         }
 
         public static string ToFileName (this DateTime date) {

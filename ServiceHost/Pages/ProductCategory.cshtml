@@ -77,11 +77,12 @@
                                                             <img src="~/UploadedPictures/@product.Picture" class="img-fluid" alt="@product.PictureAlt" title="@product.PictureTitle">
                                                         </a>
                                                         <div class="hover-icons">
-                                                            <a href="javascript:void(0)">
+                                                            <input type="hidden" value="1" id="productCount">
+                                                            <a onclick="addToCart('@product.Id', '@product.Name', '@product.DoublePrice', '@product.Picture')">
                                                                 <i class="ion-bag"></i>
                                                             </a>
                                                             <a href="javascript:void(0)" data-toggle="modal"
-                                                           data-target="#quick-view-modal-container">
+                                                               data-target="#quick-view-modal-container">
                                                                 <i class="ion-android-open"></i>
                                                             </a>
                                                         </div>
