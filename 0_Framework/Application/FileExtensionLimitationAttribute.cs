@@ -10,7 +10,7 @@ namespace _0_Framework.Application {
             _extensions = extensions;
         }
 
-        public override bool IsValid (object value) {
+        public override bool IsValid (object? value) {
             var file = value as IFormFile;
             if(file == null) {
                 return true;
