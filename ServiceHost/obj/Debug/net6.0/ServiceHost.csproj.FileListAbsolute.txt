@@ -281,7 +281,6 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Ser
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ServiceHost.deps.json
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ServiceHost.runtimeconfig.json
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ServiceHost.dll
-C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ref\ServiceHost.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ServiceHost.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\MessagePack.dll
@@ -606,3 +605,14 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Mic
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Nancy.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\refint\ServiceHost.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Presentation.Api.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Presentation.Api.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\InventoryManagement.Presentation.Api.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Presentation.Api.pdb
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.Properties.Resources.resources
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.csproj.GenerateResource.cache

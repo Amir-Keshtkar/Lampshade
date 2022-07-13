@@ -37,6 +37,7 @@ public class CreateProduct {
     public string? Keywords { get;  set; }
     
     [Required(ErrorMessage = ValidationMessages.IsRequired)]
+    [MaxLength(150,ErrorMessage =ValidationMessages.NotInRange)]
     public string? MetaDescription { get;  set; }
 
     public List<ProductCategoryViewModel>? ProductCategories { get; set; }

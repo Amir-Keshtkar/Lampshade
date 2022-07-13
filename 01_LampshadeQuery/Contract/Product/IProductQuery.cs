@@ -5,6 +5,6 @@ namespace _01_LampshadeQuery.Contract.Product {
         List<ProductQueryModel> GetLatestArrivals();
         ProductQueryModel GetDetails(string slug);
         List<ProductQueryModel> Search(string value);
-        List<CartItem> checkInventoryStatus(List<CartItem> cartItems);
+        List<CartItem> CheckInventoryStatus(List<CartItem> cartItems);
     }
 }

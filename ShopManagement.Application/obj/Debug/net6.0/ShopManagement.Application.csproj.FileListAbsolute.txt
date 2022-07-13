@@ -19,7 +19,6 @@ C:\Users\Amiri\source\repos\Lampshade\ShopManagement.Application\obj\Debug\net6.
 C:\Users\Amiri\source\repos\Lampshade\ShopManagement.Application\obj\Debug\net6.0\ShopManagement.Application.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\ShopManagement.Application.deps.json
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\ShopManagement.Application.dll
-C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\ref\ShopManagement.Application.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\ShopManagement.Application.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\0_Framework.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\ShopManagement.Application.Contract.dll
@@ -40,3 +39,4 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\D
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Abstractions.xml
 C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\bin\Debug\net6.0\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Amiri\Documents\source\repos\Lampshade\ShopManagement.Application\obj\Debug\net6.0\refint\ShopManagement.Application.dll

@@ -1,6 +1,5 @@
 ﻿using System.Text.RegularExpressions;
 using _0_Framework.Application;
-using Microsoft.AspNetCore.Http;
 
 namespace ServiceHost {
     public class FileUploader: IFileUploader {
@@ -18,11 +17,8 @@ namespace ServiceHost {
             if(!Directory.Exists(directoryPath)) {
                 Directory.CreateDirectory(directoryPath);
             }
-
             var fileName = $"{DateTime.Now.ToFileName()}-{Regex.Replace(file.FileName, @"[#]", string.Empty)}";
-
             var filePath = $"{directoryPath}//{fileName}";
-
             _ = Uploader(file, filePath);
 
             return $"{path}/{fileName}";

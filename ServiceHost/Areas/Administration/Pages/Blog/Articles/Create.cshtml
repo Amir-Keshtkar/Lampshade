@@ -11,11 +11,11 @@
             <div class="panel-heading">
                 <h3 class="panel-title">ایجاد مقاله جدید</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body center">
                 <form method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="form-group">
+                            <div class="form-group ">
                                 <label asp-for="command.Title" class="control-label">عنوان مقاله</label>
                                 <input type="text" class="form-control" asp-for="command.Title" onchange="makeSlug('command_Title', 'command_Slug')">
                                 <span asp-validation-for="command.Title" class="error"></span>

@@ -30,9 +30,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-wrapper">
-                    @foreach (var item in Model.CartItems.Where(x=>!x.InStock)) {
-                        <div class="alert alert-warning"><i class="fa fa-warning"></i>کالای <strong>@item.Name</strong> کمتر از مقدار درخواستی موجود است</div>
-                    }
+                    <div id="productStockWarning">
+                        @foreach(var item in Model.CartItems.Where(x => !x.InStock)) {
+                            <div class="alert alert-warning" id="@item.Id">
+                                <i class="fa fa-warning"></i>کالای
+                                <strong>@item.Name</strong>
+                                کمتر از مقدار درخواستی موجود است
+                            </div>
+                        }
+                    </div>
                     <div class="page-content-wrapper">
                         <div class="cart-table table-responsive">
                             <table class="table">
@@ -62,8 +68,8 @@
                                             </td>
                                             <td class="pro-quantity">
                                                 <div class="quantity-selection">
-                                                    <input type="number" value="@item.Count" min="1" 
-                                                           onchange="changeCartItemCount('@item.Id','totalItemPrice-@item.Id', this.value)">
+                                                    <input type="number" value="@item.Count" min="1"
+                                                       onchange="changeCartItemCount('@item.Id','totalItemPrice-@item.Id', this.value)">
                                                 </div>
                                             </td>
                                             <td class="pro-subtotal">
@@ -83,11 +89,11 @@
                             <div class="col-lg-6 col-12 d-flex">
                                 <div class="cart-summary">
                                     @*<div class="cart-summary-wrap">
-                                        <h4>Cart Summary</h4>
-                                        <p>Sub Total <span>$1250.00</span></p>
-                                        <p>Shipping Cost <span>$00.00</span></p>
-                                        <h2>Grand Total <span>$1250.00</span></h2>
-                                        </div>*@
+                                    <h4>Cart Summary</h4>
+                                    <p>Sub Total <span>$1250.00</span></p>
+                                    <p>Shipping Cost <span>$00.00</span></p>
+                                    <h2>Grand Total <span>$1250.00</span></h2>
+                                    </div>*@
                                     <div class="cart-summary-button">
                                         <a class="checkout-btn" asp-page-handler="GoToCheckOut">تکمیل فرایند خرید</a>
                                     </div>

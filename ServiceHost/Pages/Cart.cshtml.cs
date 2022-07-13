@@ -19,7 +19,7 @@ namespace ServiceHost.Pages {
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
-            CartItems = _productQuery.checkInventoryStatus(cartItems);
+            CartItems = _productQuery.CheckInventoryStatus(cartItems);
         }
 
         public IActionResult OnGetRemoveFromCart (long id) {
@@ -42,7 +42,7 @@ namespace ServiceHost.Pages {
             var serializer = new JavaScriptSerializer();
             var value = Request.Cookies[CookieName];
             var cartItems = serializer.Deserialize<List<CartItem>>(value);
-            CartItems = _productQuery.checkInventoryStatus(cartItems);
+            CartItems = _productQuery.CheckInventoryStatus(cartItems);
             if (CartItems.Any(x => !x.InStock)) {
                 return RedirectToPage("/Cart");
             }

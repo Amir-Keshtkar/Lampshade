@@ -10,20 +10,20 @@ using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EfCore;
 
 namespace _01_LampshadeQuery.Query {
-    public class ProductQuery: IProductQuery {
+    public class ProductQuery : IProductQuery {
         private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
         private readonly CommentContext _commentContext;
 
-        public ProductQuery (ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext) {
+        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext) {
             _shopContext = shopContext;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
             _commentContext = commentContext;
         }
 
-        public List<ProductQueryModel> GetLatestArrivals () {
+        public List<ProductQueryModel> GetLatestArrivals() {
             var products = _shopContext.Products
                 .Include(x => x.Category)
                 .Select(product => new ProductQueryModel {
@@ -41,15 +41,15 @@ namespace _01_LampshadeQuery.Query {
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
                 .Select(x => new { x.DiscountRate, x.ProductId });
 
-            foreach(var product in products) {
+            foreach (var product in products) {
                 var inventoryPrice = inventory.FirstOrDefault(x => x.ProductId == product.Id);
                 var productDiscount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-                if(inventoryPrice == null)
+                if (inventoryPrice == null)
                     continue;
                 var price = inventoryPrice.UnitPrice;
                 product.Price = price.ToMoney();
 
-                if(productDiscount == null)
+                if (productDiscount == null)
                     continue;
                 var discountRate = productDiscount.DiscountRate;
                 product.DiscountRate = discountRate;
@@ -61,7 +61,7 @@ namespace _01_LampshadeQuery.Query {
             return products;
         }
 
-        public ProductQueryModel GetDetails (string slug) {
+        public ProductQueryModel GetDetails(string slug) {
             var inventory = _inventoryContext.Inventory.Select(x => new { x.ProductId, x.UnitPrice, x.InStock });
             var discounts = _discountContext.CustomerDiscounts
                     .Where(x => x.EndDate > DateTime.Now && x.StartDate < DateTime.Now)
@@ -87,18 +87,18 @@ namespace _01_LampshadeQuery.Query {
                     Pictures = MapProductPictures(x.ProductPictures),
                 }).AsNoTracking().FirstOrDefault(x => x.Slug == slug);
 
-            if(product == null) {
+            if (product == null) {
                 return new ProductQueryModel();
             }
 
             var productInventory = inventory.FirstOrDefault(x => x.ProductId == product.Id);
-            if(productInventory != null) {
+            if (productInventory != null) {
                 product.IsInStock = productInventory.InStock;
                 var price = productInventory.UnitPrice;
                 product.Price = price.ToMoney();
                 product.DoublePrice = price;
                 var discount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-                if(discount != null) {
+                if (discount != null) {
                     var discountRate = discount.DiscountRate;
                     product.DiscountRate = discountRate;
                     product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
@@ -122,7 +122,7 @@ namespace _01_LampshadeQuery.Query {
             return product;
         }
 
-        public List<ProductQueryModel> Search (string value) {
+        public List<ProductQueryModel> Search(string value) {
             var inventory = _inventoryContext.Inventory.Select(x => new { x.UnitPrice, x.ProductId });
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
@@ -139,22 +139,24 @@ namespace _01_LampshadeQuery.Query {
                     PictureTitle = x.PictureTitle,
                     Slug = x.Slug,
                     CategorySlug = x.Category.Slug,
+                    Keywords = x.Keywords,
                     ShortDescription = x.ShortDescription
                 }).AsNoTracking();
 
-            if(!string.IsNullOrWhiteSpace(value)) {
-                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription!.Contains(value));
+            if (!string.IsNullOrWhiteSpace(value)) {
+                query = query.Where(x => x.Name.Contains(value) || x.ShortDescription!.Contains(value) || x.Keywords!.Contains(value));
             }
-            var products = query.OrderByDescending(x => x.Id).ToList();
-            foreach(var product in products) {
+
+            var products = query.OrderByDescending(x=>x.Id).ToList();
+            foreach (var product in products) {
                 var inventoryPrice = inventory.FirstOrDefault(x => x.ProductId == product.Id);
                 var productDiscount = discounts.FirstOrDefault(x => x.ProductId == product.Id);
-                if(inventoryPrice == null)
+                if (inventoryPrice == null)
                     continue;
                 var price = inventoryPrice.UnitPrice;
                 product.Price = price.ToMoney();
 
-                if(productDiscount == null)
+                if (productDiscount == null)
                     continue;
                 var discountRate = productDiscount.DiscountRate;
                 product.DiscountRate = discountRate;
@@ -168,18 +170,18 @@ namespace _01_LampshadeQuery.Query {
             return products;
         }
 
-        public List<CartItem> checkInventoryStatus (List<CartItem> cartItems) {
+        public List<CartItem> CheckInventoryStatus(List<CartItem> cartItems) {
             var inventory = _inventoryContext.Inventory.ToList();
-            foreach(var cartItem in cartItems.Where(cartItem =>
+            foreach (var cartItem in cartItems.Where(cartItem =>
                         inventory.Any(x => x.ProductId == cartItem.Id && x.InStock))) {
                 var item = inventory.Find(x => x.ProductId == cartItem.Id && x.InStock);
-                if(item != null)
+                if (item != null)
                     cartItem.InStock = cartItem.Count <= item.CalculateInventoryStock();
             }
             return cartItems;
         }
 
-        private static List<ProductPictureQueryModel> MapProductPictures (ICollection<ProductPicture> ProductPictures) {
+        private static List<ProductPictureQueryModel> MapProductPictures(ICollection<ProductPicture> ProductPictures) {
             return ProductPictures.Select(x => new ProductPictureQueryModel {
                 Picture = x.Picture,
                 PictureAlt = x.PictureAlt,

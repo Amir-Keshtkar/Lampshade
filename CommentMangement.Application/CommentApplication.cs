@@ -42,7 +42,7 @@ namespace CommentManagement.Application {
         }
 
         public List<CommentViewModel> Search (CommentSearchModel searchModel) {
-            return _commentRepository.Search(searchModel);
+            return _commentRepository.Search(searchModel).OrderByDescending(x=> x.Id).ToList();
         }
     }
 }

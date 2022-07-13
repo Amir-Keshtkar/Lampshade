@@ -22,8 +22,7 @@ namespace ShopManagement.Infrastructure.EfCore.Repository {
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 Slug = x.Slug
-            })
-                .FirstOrDefault(x => x.Id == id);
+            }).FirstOrDefault(x => x.Id == id);
 
             return productCategory;
         }
