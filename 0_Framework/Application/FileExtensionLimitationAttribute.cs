@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace _0_Framework.Application {
-    public class FileExtensionLimitationAttribute: ValidationAttribute, IClientModelValidator {
+    public class FileExtensionLimitationAttribute : ValidationAttribute, IClientModelValidator {
         private readonly string[] _extensions;
 
         public FileExtensionLimitationAttribute (string[] extensions) {

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InventoryManagement.Presentation.Api {
     [ApiController]
     [Route("api/[controller]")]
-    public class InventoryController: ControllerBase {
+    public class InventoryController : ControllerBase {
         private readonly IInventoryApplication _inventoryApplication;
         private readonly IInventoryQuery _inventoryQuery;
 
