@@ -59,10 +59,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
-            },
-            "microsoft.aspnetcore.mvc": {
-              "target": "Package",
-              "version": "[2.2.0, )"
             }
           },
           "imports": [

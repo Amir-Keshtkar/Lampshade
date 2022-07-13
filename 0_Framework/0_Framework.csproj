@@ -15,17 +15,17 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 
-	<!--<ItemGroup>
+	<ItemGroup>
 		<Reference Include="Microsoft.AspNetCore.Mvc.Core">
 			<HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.aspnetcore.mvc.core\2.0.0\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
 		</Reference>
-	</ItemGroup>-->
+	</ItemGroup>
 	<!--<ItemGroup>
 		<Reference Include="Microsoft.AspNetCore.Mvc.Core">
 			<HintPath>..\..\..\..\..\..\..\Program Files\dotnet\packs\Microsoft.AspNetCore.App.Ref\6.0.5\ref\net6.0\Microsoft.AspNetCore.Mvc.Core.dll</HintPath>
 		</Reference>
 	</ItemGroup>-->
-	<ItemGroup>
+	<!--<ItemGroup>
 		<PackageReference Include="microsoft.aspnetcore.mvc" Version="2.2.0" />
-	</ItemGroup>
+	</ItemGroup>-->
 </Project>
