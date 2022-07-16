@@ -23,9 +23,9 @@ namespace AccountManagement.Application {
 
         public OperationResult Register (RegisterAccount command) {
             var operation = new OperationResult();
-            if(command.Password != command.RePassword) {
-                return operation.Failed(ApplicationMessages.PasswordsNotMatch);
-            }
+            //if(command.Password != command.RePassword) {
+            //    return operation.Failed(ApplicationMessages.PasswordsNotMatch);
+            //}
             if(_accountRepository.Exists(x => x.UserName == command.UserName || x.Mobile == command.Mobile)) {
                 return operation.Failed(ApplicationMessages.DuplicatedMessage);
             }
