@@ -10,8 +10,6 @@ using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using ShopManagement.Infrastructure.Configuration;
 using ServiceHost;
-using ShopManagement.Presentation.Api;
-using InventoryManagement.Presentation.Api;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -77,9 +75,9 @@ builder.Services.AddRazorPages()
         options.Conventions.AuthorizeAreaFolder("Administration", "/Blog", "Blog");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Comments", "Comments");
 
-    }).AddApplicationPart(typeof(ProductController).Assembly)
-    .AddApplicationPart(typeof(InventoryController).Assembly)
-    .AddNewtonsoftJson();
+    });//.AddApplicationPart(typeof(ProductController).Assembly)
+    //.AddApplicationPart(typeof(InventoryController).Assembly)
+    //.AddNewtonsoftJson();
 
 var app = builder.Build();
 

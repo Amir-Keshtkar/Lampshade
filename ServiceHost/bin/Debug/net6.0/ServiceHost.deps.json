@@ -13,13 +13,11 @@
           "CommentManagement.Infrastructure.Configuration": "1.0.0",
           "DiscountManagement.Infrastructure.Configuration": "1.0.0",
           "InventoryManagement.Infrastructure.Configuration": "1.0.0",
-          "InventoryManagement.Presentation.Api": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.6",
           "Microsoft.EntityFrameworkCore.Design": "6.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.2",
           "Nancy": "2.0.0",
-          "ShopManagement.Infrastructure.Configuration": "1.0.0",
-          "ShopManagement.Presentation.Api": "1.0.0"
+          "ShopManagement.Infrastructure.Configuration": "1.0.0"
         },
         "runtime": {
           "ServiceHost.dll": {}
@@ -3050,16 +3048,6 @@
           "InventoryManagement.Infrastructure.EFCore.dll": {}
         }
       },
-      "InventoryManagement.Presentation.Api/1.0.0": {
-        "dependencies": {
-          "01_LampshadeQuery": "1.0.0",
-          "InventoryManagement.Application.Contract": "1.0.0",
-          "Microsoft.AspNetCore.Mvc": "2.2.0"
-        },
-        "runtime": {
-          "InventoryManagement.Presentation.Api.dll": {}
-        }
-      },
       "ShopManagement.Application/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
@@ -3107,15 +3095,6 @@
         },
         "runtime": {
           "ShopManagement.Infrastructure.EfCore.dll": {}
-        }
-      },
-      "ShopManagement.Presentation.Api/1.0.0": {
-        "dependencies": {
-          "01_LampshadeQuery": "1.0.0",
-          "Microsoft.AspNetCore.Mvc": "2.2.0"
-        },
-        "runtime": {
-          "ShopManagement.Presentation.Api.dll": {}
         }
       }
     }
@@ -4948,11 +4927,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "InventoryManagement.Presentation.Api/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -4974,11 +4948,6 @@
       "sha512": ""
     },
     "ShopManagement.Infrastructure.EfCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ShopManagement.Presentation.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
