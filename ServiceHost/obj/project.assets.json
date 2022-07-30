@@ -2348,6 +2348,41 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "RestSharp/108.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {}
+        }
+      },
+      "RestSharp.Serializers.NewtonsoftJson/108.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.1",
+          "RestSharp": "108.0.1"
+        },
+        "compile": {
+          "lib/net6.0/RestSharp.Serializers.NewtonsoftJson.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.Serializers.NewtonsoftJson.dll": {}
+        }
+      },
+      "RestSharp.Serializers.SystemTextJson/106.15.0": {
+        "type": "package",
+        "dependencies": {
+          "RestSharp": "106.15.0",
+          "System.Text.Json": "5.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/RestSharp.Serializers.SystemTextJson.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.Serializers.SystemTextJson.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4094,7 +4129,9 @@
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore": "6.0.7",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "108.0.1",
+          "RestSharp.Serializers.SystemTextJson": "106.15.0"
         },
         "compile": {
           "bin/placeholder/0_Framework.dll": {}
@@ -4459,6 +4496,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AccountManagement.Infrastructure.EfCore": "1.0.0",
           "InventoryManagement.Application.Contract": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.7",
@@ -4537,7 +4575,8 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Domain": "1.0.0",
-          "ShopManagement.Infrastructure.EfCore": "1.0.0"
+          "ShopManagement.Infrastructure.EfCore": "1.0.0",
+          "ShopManagement.Infrastructure.InventoryAcl": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ShopManagement.Infrastructure.Configuration.dll": {}
@@ -4550,6 +4589,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AccountManagement.Infrastructure.EfCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
           "ShopManagement.Domain": "1.0.0"
@@ -4559,6 +4599,20 @@
         },
         "runtime": {
           "bin/placeholder/ShopManagement.Infrastructure.EfCore.dll": {}
+        }
+      },
+      "ShopManagement.Infrastructure.InventoryAcl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShopManagement.Infrastructure.InventoryAcl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShopManagement.Infrastructure.InventoryAcl.dll": {}
         }
       },
       "ShopManagement.Presentation.Api/1.0.0": {
@@ -7772,6 +7826,58 @@
         "lib/netstandard2.0/NuGet.Versioning.xml",
         "nuget.versioning.5.11.0.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "RestSharp/108.0.1": {
+      "sha512": "XKwuwWq7A4dxZ8l9QkS2+ePLJ9ImmLaJSeFO6H2kpII4Us4n1NRs4w3c//8H2BYpL1XqBE8nmsd9aNCVBwXmOA==",
+      "type": "package",
+      "path": "restsharp/108.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.108.0.1.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "RestSharp.Serializers.NewtonsoftJson/108.0.1": {
+      "sha512": "vvIEr8CiDhwcsqVROWH8JfF40Zsg1IHRBK/q7DCAiCJX8Q1OHCo/Erowm7QrFfedK3TxbdJcg+4dor0WmY/sZQ==",
+      "type": "package",
+      "path": "restsharp.serializers.newtonsoftjson/108.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.Serializers.NewtonsoftJson.dll",
+        "lib/net5.0/RestSharp.Serializers.NewtonsoftJson.xml",
+        "lib/net6.0/RestSharp.Serializers.NewtonsoftJson.dll",
+        "lib/net6.0/RestSharp.Serializers.NewtonsoftJson.xml",
+        "lib/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.dll",
+        "lib/netstandard2.0/RestSharp.Serializers.NewtonsoftJson.xml",
+        "restsharp.png",
+        "restsharp.serializers.newtonsoftjson.108.0.1.nupkg.sha512",
+        "restsharp.serializers.newtonsoftjson.nuspec"
+      ]
+    },
+    "RestSharp.Serializers.SystemTextJson/106.15.0": {
+      "sha512": "EX4tp4YZ4WoNoYmTXIzVnYkGBWk0E5eicJhc1cUQ7SUyFUQbBWs9mQ86/WNPZiC6xlKQni5MXs9ecJ5/ySiORA==",
+      "type": "package",
+      "path": "restsharp.serializers.systemtextjson/106.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/RestSharp.Serializers.SystemTextJson.dll",
+        "lib/net461/RestSharp.Serializers.SystemTextJson.xml",
+        "lib/netstandard2.0/RestSharp.Serializers.SystemTextJson.dll",
+        "lib/netstandard2.0/RestSharp.Serializers.SystemTextJson.xml",
+        "restsharp.png",
+        "restsharp.serializers.systemtextjson.106.15.0.nupkg.sha512",
+        "restsharp.serializers.systemtextjson.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -12606,6 +12712,11 @@
       "path": "../SM.Infrastructure.EfCore/ShopManagement.Infrastructure.EfCore.csproj",
       "msbuildProject": "../SM.Infrastructure.EfCore/ShopManagement.Infrastructure.EfCore.csproj"
     },
+    "ShopManagement.Infrastructure.InventoryAcl/1.0.0": {
+      "type": "project",
+      "path": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagement.Infrastructure.InventoryAcl.csproj",
+      "msbuildProject": "../ShopManagement.Infrastructure.InventoryAcl/ShopManagement.Infrastructure.InventoryAcl.csproj"
+    },
     "ShopManagement.Presentation.Api/1.0.0": {
       "type": "project",
       "path": "../ShopManagement.Presentation.Api/ShopManagement.Presentation.Api.csproj",
@@ -12624,6 +12735,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.2",
       "Nancy >= 2.0.0",
+      "RestSharp.Serializers.NewtonsoftJson >= 108.0.1",
       "ShopManagement.Infrastructure.Configuration >= 1.0.0",
       "ShopManagement.Presentation.Api >= 1.0.0"
     ]
@@ -12709,6 +12821,10 @@
           "Nancy": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "RestSharp.Serializers.NewtonsoftJson": {
+            "target": "Package",
+            "version": "[108.0.1, )"
           }
         },
         "imports": [

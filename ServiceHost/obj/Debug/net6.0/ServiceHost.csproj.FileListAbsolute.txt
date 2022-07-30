@@ -616,3 +616,8 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ref
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ServiceHost.genruntimeconfig.cache
 C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\obj\Debug\net6.0\ref\ServiceHost.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\RestSharp.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\RestSharp.Serializers.NewtonsoftJson.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\RestSharp.Serializers.SystemTextJson.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Infrastructure.InventoryAcl.dll
+C:\Users\Amiri\Documents\source\repos\Lampshade\ServiceHost\bin\Debug\net6.0\ShopManagement.Infrastructure.InventoryAcl.pdb

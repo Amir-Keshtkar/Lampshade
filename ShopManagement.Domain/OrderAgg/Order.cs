@@ -10,34 +10,34 @@ namespace ShopManagement.Domain.OrderAgg {
         public bool IsCanceled { get; private set; }
         public string IssueTrackingNo { get; private set; }
         public long RefId { get; private set; }
-        public List<OrederItem> Items { get; private set; }
+        public int PaymentMethod { get; private set; }
+        public List<OrderItem> Items { get; private set; }
 
-        public Order(long accountId, double totalAmount, double discountAmount, double payAmount,
-            string issueTrackingNo, List<OrederItem> items) {
+        public Order(long accountId, double totalAmount, double discountAmount, double payAmount, int paymentMethod) {
             AccountId = accountId;
             TotalAmount = totalAmount;
             DiscountAmount = discountAmount;
             PayAmount = payAmount;
-            IssueTrackingNo = issueTrackingNo;
             RefId = 0;
             IsPaid = false;
             IsCanceled = false;
-            Items = items;
+            Items = new List<OrderItem>();
+            PaymentMethod = paymentMethod;
         }
         public void PaymentSucceeded(long refId) {
+            IsPaid = true;
             if (refId != 0) {
-                IsPaid=true;
-                RefId=refId;
+                RefId = refId;
             }
         }
         public void SetIssueTrackingNumber(string number) {
-            IssueTrackingNo=number;
+            IssueTrackingNo = number;
         }
         public void Cancel() {
-            IsCanceled=true;
+            IsCanceled = true;
         }
 
-        public void AddItem(OrederItem item) {
+        public void AddItem(OrderItem item) {
             Items.Add(item);
         }
     }

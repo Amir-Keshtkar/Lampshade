@@ -25,6 +25,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
     <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="108.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +39,11 @@
   <ItemGroup>
     <Folder Include="wwwroot\UploadedPictures\" />
     <Folder Include="wwwroot\UploadedPictures\دکوری\صندلی-پاف-مدل-2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Administration\Pages\Shop\Orders\Index.cshtml" />
+    <None Include="Areas\Administration\Pages\Shop\Orders\Items.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

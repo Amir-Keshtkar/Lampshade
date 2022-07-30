@@ -90,7 +90,7 @@ namespace AccountManagement.Application {
                 .Select(x => x.Code).ToList();
 
             var authViewModel = new AuthViewModel(account.Id, account.RoleId, account.Role.Name,
-                account.FullName, account.UserName, permissions);
+                account.FullName, account.UserName, permissions, account.Mobile);
             _authHelper.SignIn(authViewModel);
 
             return operation.Succeeded();
@@ -106,6 +106,10 @@ namespace AccountManagement.Application {
 
         public void Logout () {
             _authHelper.SignOut();
+        }
+
+        public List<AccountViewModel> GetAccounts() {
+            return _accountRepository.GetAccounts();
         }
     }
 }
