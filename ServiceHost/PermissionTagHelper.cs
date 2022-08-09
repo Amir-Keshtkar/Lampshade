@@ -11,6 +11,7 @@ namespace ServiceHost {
             _authHelper = authHelper;
         }
 
+
         public override void Process(TagHelperContext context, TagHelperOutput output) {
             if (!_authHelper.IsAuthenticated()) {
                 output.SuppressOutput();
