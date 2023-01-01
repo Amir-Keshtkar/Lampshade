@@ -13,6 +13,7 @@ using ServiceHost;
 using ShopManagement.Presentation.Api;
 using InventoryManagement.Presentation.Api;
 using _0_Framework.Application.ZarinPal;
+using DNTCaptcha.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -82,6 +83,23 @@ builder.Services.AddRazorPages()
     }).AddApplicationPart(typeof(ProductController).Assembly)
     .AddApplicationPart(typeof(InventoryController).Assembly)
     .AddNewtonsoftJson();
+
+builder.Services.AddDNTCaptcha(options =>
+{
+    options.UseCookieStorageProvider(SameSiteMode.None)
+    //.UseCustomFont(Path.Combine(_env.WebRootPath, "fonts", "IRANSans(FaNum)_Bold.ttf"))
+    .AbsoluteExpiration(minutes: 7)
+    .ShowThousandsSeparators(false)
+    .WithNoise(pixelsDensity: 250, linesCount: 3)
+    .WithEncryptionKey("Secure Key Validator")
+    .InputNames(
+        new DNTCaptchaComponent {
+            CaptchaHiddenInputName = "DNTCaptchaText",
+            CaptchaHiddenTokenName = "DNTCaptchaToken",
+            CaptchaInputName = "DNTCaptchaInputText"
+        })
+    .Identifier("dntCaptcha");
+});
 
 var app = builder.Build();
 

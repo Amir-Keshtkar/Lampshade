@@ -1,5 +1,6 @@
 ﻿@page
 @model ServiceHost.Pages.AccountModel
+@addTagHelper *, DNTCaptcha.Core
 @{
     ViewData["Title"] = "ورود و ثبت نام";
 }
@@ -31,7 +32,7 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
                                 @* @if(!string.IsNullOrWhiteSpace(Model.LoginMessage)) { *@
-                                     <div class="alert alert-danger">@Model.LoginMessage</div> 
+                                <div class="alert alert-danger">@Model.LoginMessage</div>
                                 @* } *@
                                 <form method="post" asp-page-handler="Login">
                                     <div class="login-form">
@@ -42,21 +43,51 @@
                                                 <input type="text" name="userName" placeholder="نام کاربری">
                                             </div>
                                             <div class="col-12">
-                                                <label  name="password">رمز عبور</label>
+                                                <label name="password">رمز عبور</label>
                                                 <input type="password" name="password" placeholder="رمز خود را وارد کنید">
                                             </div>
                                             <div class="col-sm-6">
 
                                                 @*<div class="check-box d-inline-block ml-0 ml-md-2">
-                                                    <input type="checkbox" id="remember_me">
-                                                    <label for="remember_me">مرا به یاد آور</label>
-                                                    </div>*@
+                                                <input type="checkbox" id="remember_me">
+                                                <label for="remember_me">مرا به یاد آور</label>
+                                                </div>*@
 
                                             </div>
 
                                             <div class="col-sm-6 text-left text-sm-right">
                                                 <a href="#" class="forget-pass-link"> رمز خود را فراموش کرده ام!</a>
                                             </div>
+
+                                            <!--  Dnt Captcha Customized Code   -->
+                                            @*<div class="col-md-12">
+                                                <img src="@Model.Captcha.DntCaptchaImgUrl" alt="Girl in a jacket" width="50" height="30">
+                                                <input name="DNTCaptchaText" type="text" placeholder="کد کپچا را وارد کنید">
+                                            </div>*@
+
+                                            <!-- Dnt Captcha Default Code-->
+                                                <dnt-captcha asp-captcha-generator-max="30"
+                                                             asp-captcha-generator-min="1"
+                                                             asp-captcha-generator-language="English"
+                                                             asp-captcha-generator-display-mode="SumOfTwoNumbers"
+                                                             asp-use-relative-urls="true"
+                                                             asp-placeholder="Security code as a number"
+                                                             asp-validation-error-message="Please enter the security code as a number."
+                                                             asp-font-name="Tahoma"
+                                                             asp-font-size="20"
+                                                             asp-fore-color="#333333"
+                                                             asp-back-color="#FCF6F5FF"
+                                                             asp-text-box-class="form-control"
+                                                             asp-text-box-template="<div class='input-group'><span class='input-group-text'><span class='bi-lock'></span></span>{0}</div>"
+                                                             asp-validation-message-class="text-danger"
+                                                             asp-refresh-button-class="bi-arrow-counterclockwise btn-lg"
+                                                             asp-show-refresh-button="true"
+                                                             asp-dir="ltr" />
+
+                                            <!--  Google Recaptcha    --> 
+                                            @*<div class="col-md-12">
+                                                <div class="g-recaptcha" data-sitekey="6LdLo5cjAAAAAPfKBeatHR-uSXC_gRm1ZqmULhiQ"></div>
+                                            </div>*@
 
                                             <div class="col-md-12">
                                                 <button class="register-button">ورود</button>
@@ -66,7 +97,8 @@
                                 </form>
                             </div>
                             <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
-                                @if(!string.IsNullOrWhiteSpace(Model.RegisterMessage)) {
+                                @if (!string.IsNullOrWhiteSpace(Model.RegisterMessage))
+                                {
                                     <div class="alert alert-danger">@Model.RegisterMessage</div>
                                 }
                                 <form method="post" asp-page-handler="Register">
@@ -108,3 +140,6 @@
         </div>
     </div>
 </div>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

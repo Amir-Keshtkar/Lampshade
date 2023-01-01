@@ -6,5 +6,6 @@
         public const string PasswordWrong = "پسورد اشتباه است";
         public const string WrongUserPass = "نام کاربری یا رمز عبور اشتباه است";
         public const string InfosNotComplete = "اطلاعات را تکمیل کنید";
+        public const string NotIdentifiedd = "اعتبار سنجی نشده اید";
     }
 }
