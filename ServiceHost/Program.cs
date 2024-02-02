@@ -10,6 +10,13 @@ using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using ShopManagement.Infrastructure.Configuration;
 using ServiceHost;
+using AccountManagement.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
+using DiscountManagement.Infrastructure.EFCore;
+using InventoryManagement.Infrastructure.EFCore;
+using BlogManagement.Infrastructure.EFCore;
+using CommentManagement.Infrastructure.EFCore;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -95,8 +102,38 @@ app.UseCookiePolicy();
 
 app.UseRouting();
 
-app.UseAuthorization();
 
+app.UseAuthorization();
+app.InitializeDatabase();
 app.MapRazorPages();
+app.MapControllers();
 
 app.Run();
+
+public static class DependencyInjection {
+    public static IApplicationBuilder InitializeDatabase(this IApplicationBuilder app) {
+        using (var scope = app.ApplicationServices.CreateScope()) {
+
+            var accountContext = scope.ServiceProvider.GetRequiredService<AccountContext>();
+            accountContext.Database.Migrate();
+
+            var shopContext = scope.ServiceProvider.GetRequiredService<ShopContext>();
+            shopContext.Database.Migrate();
+
+            var discountContext = scope.ServiceProvider.GetRequiredService<DiscountContext>();
+            discountContext.Database.Migrate();
+
+            var inventoryContext = scope.ServiceProvider.GetRequiredService<InventoryContext>();
+            inventoryContext.Database.Migrate();
+
+
+            var blogContext = scope.ServiceProvider.GetRequiredService<BlogContext>();
+            blogContext.Database.Migrate();
+
+
+            var commentContext = scope.ServiceProvider.GetRequiredService<CommentContext>();
+            commentContext.Database.Migrate();
+        }
+        return app;
+    }
+}

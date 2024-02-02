@@ -1,5 +1,4 @@
 ﻿using _0_Framework.Application;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BlogManagement.Application.Contract.ArticleCategory {
     public interface IArticleCategoryApplication {
