@@ -39,7 +39,8 @@ namespace ServiceHost.Pages {
             _cartService.Set(Cart);
         }
 
-        public IActionResult OnPostPay(int paymentMethod) {
+        public IActionResult OnGetPay(string id) {
+            int paymentMethod = 1;
             var cart = _cartService.Get();
             cart.SetPaymentMethod(paymentMethod);
 
@@ -56,20 +57,20 @@ namespace ServiceHost.Pages {
                                 "",
                                 "خرید از درگاه لوازم خانگی و دکوری",
                                 orderId);
-            return Redirect($"https://{_zarinPalFactory.Prefix}.zarinpal.com/pg/StartPay/{paymentResponse.Authority}");
+                return Redirect($"https://gateway.zibal.ir/start/{paymentResponse.Authority}");
             }
             else {
-                var paymentResult=new PaymentResult();
-                return RedirectToPage("/PaymentResult", paymentResult.Succeeded("سفارش شما با موفقیت ثبت شد",null));
+                var paymentResult = new PaymentResult();
+                return RedirectToPage("/PaymentResult", paymentResult.Succeeded("سفارش شما با موفقیت ثبت شد", null));
             }
         }
 
-        public IActionResult OnGetCallBack([FromQuery] string authority, [FromQuery] string status, [FromQuery] long oId) {
-            var orderAmount = _orderApplication.GetAmountBy(id: oId);
-            var vertificationResponse = _zarinPalFactory.CreateVerificationRequest(authority, orderAmount.ToString());
+        public IActionResult OnGetCallBack([FromQuery] string trackId, [FromQuery] string status, [FromQuery] long orderId, [FromBody] int success) {
+            var orderAmount = _orderApplication.GetAmountBy(id: orderId);
+            var vertificationResponse = _zarinPalFactory.CreateVerificationRequest(trackId, orderAmount.ToString());
             var result = new PaymentResult();
-            if (status == "OK" && vertificationResponse.Status == 100) {
-                var issueTrackingNo = _orderApplication.PaymentSucceeded(oId, vertificationResponse.RefID);
+            if ((status == "1" || status == "2") && vertificationResponse.Status == 1) {
+                var issueTrackingNo = _orderApplication.PaymentSucceeded(orderId, vertificationResponse.RefID);
                 Response.Cookies.Delete(CookieName);
                 result = result.Succeeded("پرداخت با موفقیت انجام شد.", issueTrackingNo);
                 return RedirectToPage("/PaymentResult", result);

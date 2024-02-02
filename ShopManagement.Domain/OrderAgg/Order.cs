@@ -23,6 +23,7 @@ namespace ShopManagement.Domain.OrderAgg {
             IsCanceled = false;
             Items = new List<OrderItem>();
             PaymentMethod = paymentMethod;
+            IssueTrackingNo = "";
         }
         public void PaymentSucceeded(long refId) {
             IsPaid = true;

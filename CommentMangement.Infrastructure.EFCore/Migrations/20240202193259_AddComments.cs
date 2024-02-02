@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CommentManagement.Infrastructure.EfCore.Migrations
+namespace CommentManagement.Infrastructure.EFCore.Migrations
 {
-    public partial class newComment : Migration
+    public partial class AddComments : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
