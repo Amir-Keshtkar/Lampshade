@@ -20,10 +20,11 @@ namespace AccountManagement.Application.Contracts.Account {
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Mobile { get; set; }
         
-        [Range(1, int.MaxValue, ErrorMessage = ValidationMessages.IsRequired)]
-        public long RoleId { get; set; }
+        //[Range(1, int.MaxValue, ErrorMessage = ValidationMessages.IsRequired)]
+        public long? RoleId { get; set; }
 
+        
         public IFormFile? ProfilePhoto { get; set; }
-        public List<RoleViewModel> Roles { get; set; }
+        public List<RoleViewModel>? Roles { get; set; }
     }
 }

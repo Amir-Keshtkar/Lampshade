@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
         "projectName": "01_LampshadeQuery",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,20 +28,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -61,30 +61,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
         "projectName": "0_Framework",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -145,30 +160,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
         "projectName": "AccountManagement.Application.Contracts",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,8 +212,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -203,30 +233,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj",
         "projectName": "AccountManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -240,11 +285,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
               }
             }
           }
@@ -264,30 +309,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
         "projectName": "AccountManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -301,11 +361,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application.Contracts\\AccountManagement.Application.Contracts.csproj"
               }
             }
           }
@@ -325,30 +385,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj",
         "projectName": "AccountManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -362,11 +437,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Application\\AccountManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -392,30 +467,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj",
         "projectName": "AccountManagement.Infrastructure.EfCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -429,8 +519,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Domain\\AccountManagement.Domain.csproj"
               }
             }
           }
@@ -466,30 +556,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj",
         "projectName": "BlogManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -503,8 +608,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -530,30 +635,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
         "projectName": "BlogManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -567,11 +687,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
               }
             }
           }
@@ -591,30 +711,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
         "projectName": "BlogManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -628,14 +763,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
               }
             }
           }
@@ -655,30 +790,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
         "projectName": "BlogManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -692,17 +842,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application.Contract\\BlogManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Application\\BlogManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -728,30 +878,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
         "projectName": "BlogManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -765,8 +930,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Domain\\BlogManagement.Domain.csproj"
               }
             }
           }
@@ -802,30 +967,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
         "projectName": "CommentManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -839,11 +1019,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj"
               }
             }
           }
@@ -863,30 +1043,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj",
         "projectName": "CommentManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -900,8 +1095,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -921,30 +1116,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj",
         "projectName": "CommentManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -958,11 +1168,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application.Contracts\\CommentManagement.Application.Contract.csproj"
               }
             }
           }
@@ -982,30 +1192,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
         "projectName": "CommentManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1019,11 +1244,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Application\\CommentManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1049,30 +1274,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
         "projectName": "CommentManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1086,11 +1326,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentManagement.Domain\\CommentManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -1126,30 +1366,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
         "projectName": "DiscountManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1163,8 +1418,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              },
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1190,30 +1448,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
         "projectName": "DiscountManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1227,11 +1500,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               }
             }
           }
@@ -1251,30 +1524,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
         "projectName": "DiscountManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1288,11 +1576,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Application\\DiscountManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1318,30 +1606,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
         "projectName": "DiscountManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1355,11 +1658,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CustomerDiscount.Application.Contract\\DiscountManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1379,30 +1682,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
         "projectName": "DiscountManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\DiscountManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Infrastructure.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1416,11 +1734,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Domain\\DiscountManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -1456,30 +1774,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
         "projectName": "InventoryManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1493,11 +1826,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1517,30 +1850,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
         "projectName": "InventoryManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1554,14 +1902,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               }
             }
           }
@@ -1581,30 +1929,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
         "projectName": "InventoryManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1618,11 +1981,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1642,30 +2005,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
         "projectName": "InventoryManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1679,20 +2057,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application\\InventoryManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj"
               }
             }
           }
@@ -1718,30 +2096,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj",
         "projectName": "InventoryManagement.Infrastructure.EFCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\InventoryManagement.Infrastructure.EFCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1755,17 +2148,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Domain\\InventoryManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -1801,30 +2194,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
         "projectName": "InventoryManagement.Presentation.Api",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1838,11 +2246,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               }
             }
           }
@@ -1868,30 +2276,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
         "projectName": "ServiceHost",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1905,29 +2328,29 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj"
               }
             }
           }
@@ -1971,10 +2394,29 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -1983,21 +2425,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
         "projectName": "ShopManagement.Application.Contract",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2011,8 +2453,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               }
             }
           }
@@ -2032,30 +2474,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
         "projectName": "ShopManagement.Application",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2069,11 +2526,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -2099,30 +2556,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
         "projectName": "ShopManagement.Infrastructure.Configuration",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2136,20 +2608,20 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application\\ShopManagement.Application.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj"
               }
             }
           }
@@ -2175,30 +2647,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
         "projectName": "ShopManagement.Domain",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2212,11 +2699,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\0_Framework\\0_Framework.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Application.Contract\\ShopManagement.Application.Contract.csproj"
               }
             }
           }
@@ -2236,30 +2723,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
         "projectName": "ShopManagement.Infrastructure.InventoryAcl",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\ShopManagement.Infrastructure.InventoryAcl.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Infrastructure.InventoryAcl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2273,11 +2775,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\InventoryManagement.Application.Contract\\InventoryManagement.Application.Contract.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -2297,30 +2799,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj",
         "projectName": "ShopManagement.Presentation.Api",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2334,8 +2851,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
               }
             }
           }
@@ -2361,30 +2878,45 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
+    "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+        "projectUniqueName": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
         "projectName": "ShopManagement.Infrastructure.EfCore",
-        "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
-        "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\obj\\",
+        "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\ShopManagement.Infrastructure.EfCore.csproj",
+        "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\SM.Infrastructure.EfCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -2398,11 +2930,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.EfCore\\AccountManagement.Infrastructure.EfCore.csproj"
               },
-              "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
-                "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
+              "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj": {
+                "projectPath": "C:\\Users\\amir7\\source\\repos\\Lampshade\\ShopManagement.Domain\\ShopManagement.Domain.csproj"
               }
             }
           }
@@ -2438,16 +2970,31 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.26, 6.0.26]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

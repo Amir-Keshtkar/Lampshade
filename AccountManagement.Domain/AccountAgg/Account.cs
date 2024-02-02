@@ -18,7 +18,7 @@ namespace AccountManagement.Domain.AccountAgg {
             Mobile = mobile;
             RoleId = roleId;
             if (roleId == 0) {
-                RoleId = 2;
+                RoleId = 3;
             }
 
             ProfilePhoto = profilePhoto;
@@ -32,6 +32,10 @@ namespace AccountManagement.Domain.AccountAgg {
             if(!string.IsNullOrWhiteSpace(profilePhoto)) {
                 ProfilePhoto = profilePhoto;
             }
+            if (roleId == 0) {
+                RoleId = 3;
+            }
+
         }
 
         public void ChangePassword (string password) {

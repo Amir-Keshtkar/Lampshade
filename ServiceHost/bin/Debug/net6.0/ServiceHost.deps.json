@@ -2995,6 +2995,7 @@
       },
       "DiscountManagement.Application.Contract/1.0.0": {
         "dependencies": {
+          "0_Framework": "1.0.0",
           "ShopManagement.Application.Contract": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0"
         },

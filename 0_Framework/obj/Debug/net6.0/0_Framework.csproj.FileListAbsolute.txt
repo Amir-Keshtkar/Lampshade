@@ -22,3 +22,16 @@ C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_F
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\refint\0_Framework.dll
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.pdb
 C:\Users\Amiri\Documents\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\ref\0_Framework.dll
+C:\Users\amir7\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\0_Framework.deps.json
+C:\Users\amir7\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\0_Framework.dll
+C:\Users\amir7\source\repos\Lampshade\0_Framework\bin\Debug\net6.0\0_Framework.pdb
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.csproj.AssemblyReference.cache
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.AssemblyInfoInputs.cache
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.AssemblyInfo.cs
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.csproj.CoreCompileInputs.cache
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.sourcelink.json
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.dll
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\refint\0_Framework.dll
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\0_Framework.pdb
+C:\Users\amir7\source\repos\Lampshade\0_Framework\obj\Debug\net6.0\ref\0_Framework.dll

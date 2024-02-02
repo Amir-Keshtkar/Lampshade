@@ -10,9 +10,13 @@ using InventoryManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using ShopManagement.Infrastructure.Configuration;
 using ServiceHost;
-using ShopManagement.Presentation.Api;
-using InventoryManagement.Presentation.Api;
-using _0_Framework.Application.ZarinPal;
+using AccountManagement.Infrastructure.EfCore;
+using ShopManagement.Infrastructure.EfCore;
+using DiscountManagement.Infrastructure.EFCore;
+using InventoryManagement.Infrastructure.EFCore;
+using BlogManagement.Infrastructure.EFCore;
+using CommentManagement.Infrastructure.EFCore;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,7 +35,6 @@ builder.Services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, Unico
 builder.Services.AddSingleton<IPasswordHasher, PasswordHasher>();
 builder.Services.AddTransient<IFileUploader, FileUploader>();
 builder.Services.AddTransient<IAuthHelper, AuthHelper>();
-builder.Services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
 
 builder.Services.Configure<CookiePolicyOptions>(options => {
     options.CheckConsentNeeded = context => true;
@@ -79,14 +82,12 @@ builder.Services.AddRazorPages()
         options.Conventions.AuthorizeAreaFolder("Administration", "/Blog", "Blog");
         options.Conventions.AuthorizeAreaFolder("Administration", "/Comments", "Comments");
 
-    }).AddApplicationPart(typeof(ProductController).Assembly)
-    .AddApplicationPart(typeof(InventoryController).Assembly)
-    .AddNewtonsoftJson();
+    });
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if(!app.Environment.IsDevelopment()) {
+if (!app.Environment.IsDevelopment()) {
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
@@ -101,9 +102,38 @@ app.UseCookiePolicy();
 
 app.UseRouting();
 
-app.UseAuthorization();
 
+app.UseAuthorization();
+app.InitializeDatabase();
 app.MapRazorPages();
 app.MapControllers();
 
 app.Run();
+
+public static class DependencyInjection {
+    public static IApplicationBuilder InitializeDatabase(this IApplicationBuilder app) {
+        using (var scope = app.ApplicationServices.CreateScope()) {
+
+            var accountContext = scope.ServiceProvider.GetRequiredService<AccountContext>();
+            accountContext.Database.Migrate();
+
+            var shopContext = scope.ServiceProvider.GetRequiredService<ShopContext>();
+            shopContext.Database.Migrate();
+
+            var discountContext = scope.ServiceProvider.GetRequiredService<DiscountContext>();
+            discountContext.Database.Migrate();
+
+            var inventoryContext = scope.ServiceProvider.GetRequiredService<InventoryContext>();
+            inventoryContext.Database.Migrate();
+
+
+            var blogContext = scope.ServiceProvider.GetRequiredService<BlogContext>();
+            blogContext.Database.Migrate();
+
+
+            var commentContext = scope.ServiceProvider.GetRequiredService<CommentContext>();
+            commentContext.Database.Migrate();
+        }
+        return app;
+    }
+}
