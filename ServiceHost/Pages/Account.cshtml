@@ -61,32 +61,32 @@
 
                                             <!--  Dnt Captcha Customized Code   -->
                                             @*<div class="col-md-12">
-                                                <img src="@Model.Captcha.DntCaptchaImgUrl" alt="Girl in a jacket" width="50" height="30">
-                                                <input name="DNTCaptchaText" type="text" placeholder="کد کپچا را وارد کنید">
+                                            <img src="@Model.Captcha.DntCaptchaImgUrl" alt="Girl in a jacket" width="50" height="30">
+                                            <input name="DNTCaptchaText" type="text" placeholder="کد کپچا را وارد کنید">
                                             </div>*@
 
                                             <!-- Dnt Captcha Default Code-->
-                                                <dnt-captcha asp-captcha-generator-max="30"
-                                                             asp-captcha-generator-min="1"
-                                                             asp-captcha-generator-language="English"
-                                                             asp-captcha-generator-display-mode="SumOfTwoNumbers"
-                                                             asp-use-relative-urls="true"
-                                                             asp-placeholder="Security code as a number"
-                                                             asp-validation-error-message="Please enter the security code as a number."
-                                                             asp-font-name="Tahoma"
-                                                             asp-font-size="20"
-                                                             asp-fore-color="#333333"
-                                                             asp-back-color="#FCF6F5FF"
-                                                             asp-text-box-class="form-control"
-                                                             asp-text-box-template="<div class='input-group'><span class='input-group-text'><span class='bi-lock'></span></span>{0}</div>"
-                                                             asp-validation-message-class="text-danger"
-                                                             asp-refresh-button-class="bi-arrow-counterclockwise btn-lg"
-                                                             asp-show-refresh-button="true"
-                                                             asp-dir="ltr" />
+                                            <dnt-captcha asp-captcha-generator-max="30"
+                                                         asp-captcha-generator-min="1"
+                                                         asp-captcha-generator-language="English"
+                                                         asp-captcha-generator-display-mode="SumOfTwoNumbers"
+                                                         asp-use-relative-urls="true"
+                                                         asp-placeholder="Security code as a number"
+                                                         asp-validation-error-message="Please enter the security code as a number."
+                                                         asp-font-name="Tahoma"
+                                                         asp-font-size="50"
+                                                         asp-fore-color="#000000"
+                                                         asp-back-color="#7A7A7A"
+                                                         asp-text-box-class="form-control"
+                                                         asp-text-box-template="<div class='input-group'><span class='input-group-text'><span class='bi-lock'></span></span>{0}</div>"
+                                                         asp-validation-message-class="text-danger"
+                                                         asp-refresh-button-class="bi-arrow-counterclockwise btn-lg"
+                                                         asp-show-refresh-button="true"
+                                                         asp-dir="ltr" />
 
-                                            <!--  Google Recaptcha    --> 
+                                            <!--  Google Recaptcha    -->
                                             @*<div class="col-md-12">
-                                                <div class="g-recaptcha" data-sitekey="6LdLo5cjAAAAAPfKBeatHR-uSXC_gRm1ZqmULhiQ"></div>
+                                            <div class="g-recaptcha" data-sitekey="6LdLo5cjAAAAAPfKBeatHR-uSXC_gRm1ZqmULhiQ"></div>
                                             </div>*@
 
                                             <div class="col-md-12">

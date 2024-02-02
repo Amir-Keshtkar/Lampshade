@@ -13847,19 +13847,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Amiri\\.nuget\\packages\\": {}
+    "C:\\Users\\amir7\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+      "projectUniqueName": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
       "projectName": "ServiceHost",
-      "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
-      "packagesPath": "C:\\Users\\Amiri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
+      "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ServiceHost\\ServiceHost.csproj",
+      "packagesPath": "C:\\Users\\amir7\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ServiceHost\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Amiri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\amir7\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13873,29 +13873,29 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\AccountManagement.Infrastructure.Configuration\\AccountManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\BlogManagement.Infrastructure.Configuration\\BlogManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\CommentMangement.Infrastructure.Configuration\\CommentManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\DiscountManagement.Configuration\\DiscountManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Infrastructure.Configuration\\InventoryManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\InventoryManagement.Presentation.Api\\InventoryManagement.Presentation.Api.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ShopManagement.Configuraion\\ShopManagement.Infrastructure.Configuration.csproj"
             },
-            "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
-              "projectPath": "C:\\Users\\Amiri\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj"
+            "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj": {
+              "projectPath": "C:\\Users\\amir7\\Documents\\source\\repos\\Lampshade\\ShopManagement.Presentation.Api\\ShopManagement.Presentation.Api.csproj"
             }
           }
         }
@@ -13948,6 +13948,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -13956,7 +13974,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\provinces.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AccountManagement.Infrastructure.Configuration\AccountManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\BlogManagement.Infrastructure.Configuration\BlogManagement.Infrastructure.Configuration.csproj" />
     <ProjectReference Include="..\CommentMangement.Infrastructure.Configuration\CommentManagement.Infrastructure.Configuration.csproj" />
@@ -45,6 +49,7 @@
   <ItemGroup>
     <None Include="Areas\Administration\Pages\Shop\Orders\Index.cshtml" />
     <None Include="Areas\Administration\Pages\Shop\Orders\Items.cshtml" />
+    <None Include="wwwroot\provinces.json" />
   </ItemGroup>
 
   <ItemGroup>

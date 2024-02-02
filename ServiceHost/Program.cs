@@ -14,6 +14,13 @@ using ShopManagement.Presentation.Api;
 using InventoryManagement.Presentation.Api;
 using _0_Framework.Application.ZarinPal;
 using DNTCaptcha.Core;
+using AccountManagement.Infrastructure.EfCore;
+using Microsoft.EntityFrameworkCore;
+using ShopManagement.Infrastructure.EfCore;
+using InventoryManagement.Infrastructure.EFCore;
+using CommentManagement.Infrastructure.EFCore;
+using DiscountManagement.Infrastructure.EFCore;
+using BlogManagement.Infrastructure.EFCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -84,8 +91,7 @@ builder.Services.AddRazorPages()
     .AddApplicationPart(typeof(InventoryController).Assembly)
     .AddNewtonsoftJson();
 
-builder.Services.AddDNTCaptcha(options =>
-{
+builder.Services.AddDNTCaptcha(options => {
     options.UseCookieStorageProvider(SameSiteMode.None)
     //.UseCustomFont(Path.Combine(_env.WebRootPath, "fonts", "IRANSans(FaNum)_Bold.ttf"))
     .AbsoluteExpiration(minutes: 7)
@@ -104,7 +110,7 @@ builder.Services.AddDNTCaptcha(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if(!app.Environment.IsDevelopment()) {
+if (!app.Environment.IsDevelopment()) {
     app.UseExceptionHandler("/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
@@ -120,8 +126,36 @@ app.UseCookiePolicy();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.InitializeDatabase();
 app.MapRazorPages();
 app.MapControllers();
 
 app.Run();
+
+public static class DependencyInjection {
+    public static IApplicationBuilder InitializeDatabase(this IApplicationBuilder app) {
+        using (var scope = app.ApplicationServices.CreateScope()) {
+
+            var accountContext = scope.ServiceProvider.GetRequiredService<AccountContext>();
+            accountContext.Database.Migrate();
+
+            var shopContext = scope.ServiceProvider.GetRequiredService<ShopContext>();
+            shopContext.Database.Migrate();
+
+            var discountContext = scope.ServiceProvider.GetRequiredService<DiscountContext>();
+            discountContext.Database.Migrate();
+
+            var inventoryContext = scope.ServiceProvider.GetRequiredService<InventoryContext>();
+            inventoryContext.Database.Migrate();
+
+
+            var blogContext = scope.ServiceProvider.GetRequiredService<BlogContext>();
+            blogContext.Database.Migrate();
+
+
+            var commentContext = scope.ServiceProvider.GetRequiredService<CommentContext>();
+            commentContext.Database.Migrate();
+        }
+        return app;
+    }
+}

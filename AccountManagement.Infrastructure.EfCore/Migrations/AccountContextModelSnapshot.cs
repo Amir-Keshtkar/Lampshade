@@ -102,7 +102,7 @@ namespace AccountManagement.Infrastructure.EfCore.Migrations
 
             modelBuilder.Entity("AccountManagement.Domain.RoleAgg.Role", b =>
                 {
-                    b.OwnsMany("AccountManagement.Domain.RoleAgg.Permission", "Permissions", b1 =>
+                    b.OwnsMany("AccountManagement.Domain.RoleAgg.Role.Permissions#AccountManagement.Domain.RoleAgg.Permission", "Permissions", b1 =>
                         {
                             b1.Property<long>("Id")
                                 .ValueGeneratedOnAdd()
